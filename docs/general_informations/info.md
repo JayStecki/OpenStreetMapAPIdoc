@@ -1,0 +1,6 @@
+!!! warning "OSM API v0.6 on wiki is made by users (not admins)."
+    Please note that even a **source for this documentation** is [not an official documentation](https://github.com/openstreetmap/openstreetmap-website/commit/b9c85c269726faad3c2613b37f01683c8b59f5c6#commitcomment-125789988) and documented there behaviors [may change in the future](https://github.com/openstreetmap/openstreetmap-website/commit/b9c85c269726faad3c2613b37f01683c8b59f5c6#commitcomment-125789640).
+
+This Editing API is based on the ideas of the RESTful API. For more information on RESTful APIs see ...
+
+The code powering the API can be found on GitHub at ...

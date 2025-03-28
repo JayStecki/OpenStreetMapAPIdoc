@@ -1,0 +1,37 @@
+site_name: OpenStreetMap API doc
+theme: 
+  name: material
+  language: en
+  font:
+    text: Roboto
+    code: Lekton
+  icon:
+    logo: fontawesome/solid/map
+  favicon: assets/faviconJS.ico
+  palette:
+    primary: green
+    accent: pink
+  plugins:
+  - social
+nav:
+  - Welcome to OSM API doc: index.md
+  - Overview: Overview.md
+  - General informations:
+    - Info: general_informations/info.md
+    - URL + authentification: general_informations/URL_+_authentication.md
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - attr_list
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/j%C4%99drzej-j-steckiewicz-395659334/
+
+copyright: Copyright &copy; 2025 Jędrzej Steckiewicz

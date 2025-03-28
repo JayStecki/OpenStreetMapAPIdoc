@@ -11,7 +11,7 @@
 ## SCHEDULE
 > Also available on JIRA. Deadlines:
 - [x]  March 13 - Organizational meeting (live).
-- [ ]  March 21 - Project plan.
+- [x]  March 21 - Project plan.
 - [ ]  April 13 - 20% draft.
 - [ ]  April 21 - 100% draft (live checking).
 - [ ]  May 10 - project fully reviewed (supervisor + peer reviewers).
@@ -38,7 +38,7 @@ Navigation in Unified Modeling Language (UML):
 
 ### Concept
 ^[Back to plan](#plan)^
-> Migrate existing API. Reuse, reduce, improve, secure.
+> Migrate existing API. Reuse, reduce, improve, secure (RRIS).
 1. Find item (open source API) to migration:
 <!--
    1. User friendly text.
@@ -122,28 +122,32 @@ static webpage generator:
   - config.yaml (modification),
   - custom.js (dynamic content in JS).
 
+#### Scenario
+[devScenario](PROJECT_devScenario.md) dedicated to get the results.
+
 ^[back to concept](#concept)^
 ### Tasks
 ^[Back to plan](#plan)^
-- [x]  March 13 - Organizational meeting (live):
+- [x] March 13 - Organizational meeting (live):
   - [x] establish the rules,
   - [x] create plan,
   - [x] public plan,
   - [x] share plan with the team.
-- [x]  March 21 - Project plan:
-  - [ ] analyze review changes,
-  - [ ]  set up and test the environment,
-    - [ ]  built eligible template (fix bug if needed or change template),
-    - [ ]  put 15% of content to the template. 
-- [ ]  April 13 - 20% draft:
-  - [ ]  100% content in new template,
-- [ ]  April 21 - 100% draft (live checking),
-  - [ ]  adjustments in meantime of review,
-- [ ]  May 10 - project fully reviewed (supervisor, peer reviewers).
+- [x] March 21 - Project plan:
+  - [x] analyze review changes,
+    - [ ] apply changes (add PROJECT_devScenario),
+  - [ ] set up and test the environment,
+    - [ ] built eligible template (fix bug if needed or change template),
+    - [ ] put 15% of content to the template. 
+- [ ] April 13 - 20% draft:
+  - [ ] 100% content in new template,
+- [ ] April 21 - 100% draft (live checking),
+  - [ ] adjustments in meantime of review,
+- [ ] May 10 - project fully reviewed (supervisor, peer reviewers).
   - [ ] fix bugs, merge changes.  
-- [ ]  May 17 - project published with changes.
-  - [ ]  create presentation.
-- [ ]  May 24 - final exam, graduation.
+- [ ] May 17 - project published with changes.
+  - [ ] create presentation.
+- [ ] May 24 - final exam, graduation.
 ### Reference
 ^[Back to plan](#plan)^
 
@@ -161,10 +165,10 @@ static webpage generator:
   - [ ] wiki -> mk-docs.
 > Knowledge benefits:
 1. Understand Application Programming Interface (API) mechanic.
-2. Understand OpenStreetMap (OSM) software purpose and development. [^3](#footnotes)
+2. Understand OpenStreetMap (OSM) software purpose and development.
 > Additonal benefits:
 - connection with SMEs (devs) established,
-- open source admins informed.
+- open source admins (OSM) informed.
 ---
 ## Footnotes
 [^1]:
