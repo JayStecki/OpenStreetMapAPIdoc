@@ -123,7 +123,7 @@ static webpage generator:
   - custom.js (dynamic content in JS).
 
 #### Scenario
-[devScenario](PROJECT_devScenario.md) dedicated to get the results.
+[devScenario](PROJECT_devScenario.md) is dedicated to get the results.
 
 ^[back to concept](#concept)^
 ### Tasks
@@ -135,9 +135,9 @@ static webpage generator:
   - [x] share plan with the team.
 - [x] March 21 - Project plan:
   - [x] analyze review changes,
-    - [ ] apply changes (add PROJECT_devScenario),
-  - [ ] set up and test the environment,
-    - [ ] built eligible template (fix bug if needed or change template),
+    - [x] apply changes (add PROJECT_devScenario),
+  - [x] set up and test the environment,
+    - [x] built eligible template (fix bug if needed or change template),
     - [ ] put 15% of content to the template. 
 - [ ] April 13 - 20% draft:
   - [ ] 100% content in new template,
@@ -157,12 +157,12 @@ static webpage generator:
 ### Result
 ^[Back to plan](#plan)^
 > Migration completed if:
-- Option 1 - minimal - two colums with increased usability:
-  - [ ] wiki -> just-the-docs.
-- Option 2 - optimal - three columns (third column *showcase only*):
-  - [ ] wiki -> just-the-docs + third column.
+- ~~Option 1 - minimal - two colums with increased usability:~~
+  - [ ] ~~wiki -> just-the-docs.~~
+- ~~Option 2 - optimal - three columns (third column *showcase only*):~~
+  - [ ] ~~wiki -> just-the-docs + third column.~~
 - Option 3 -> maximal - three columns (third with reverese usability):
-  - [ ] wiki -> mk-docs.
+  - [x] wiki -> mk-docs.
 > Knowledge benefits:
 1. Understand Application Programming Interface (API) mechanic.
 2. Understand OpenStreetMap (OSM) software purpose and development.
