@@ -7,6 +7,7 @@ theme:
     code: Lekton
   icon:
     logo: fontawesome/solid/map
+    annotation: material/plus-circle
   favicon: assets/faviconJS.ico
   palette:
     primary: green
@@ -19,6 +20,9 @@ nav:
   - General informations:
     - Info: general_informations/info.md
     - URL + authentification: general_informations/URL_+_authentication.md
+    - Elements: general_informations/elements.md
+    - Changesets: general_informations/changesets.md
+    - Tags: general_informations/tags.md
 
 markdown_extensions:
   - attr_list
@@ -26,8 +30,20 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
+  - pymdownx.caret
   - pymdownx.details
-  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
+  - md_in_html
 
 extra:
   social:

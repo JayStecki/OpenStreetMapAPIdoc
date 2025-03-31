@@ -8,7 +8,7 @@
 ### Footnotes
 [^1]:
 
-[elements by OSM doc](https://wiki.openstreetmap.org/wiki/Elements)
+[elements by OSM doc](https://wiki.openstreetmap.org/wiki/Elements){:target="_blank"}
 
 Elements are the basic components of OpenStreetMap's conceptual data model of the physical world. There are three types of elements:
 - nodes (defining points in space),
@@ -25,7 +25,7 @@ Elements are the basic components of OpenStreetMap's conceptual data model of th
 
 [^2]:
 
-[changesets by OSM doc](https://wiki.openstreetmap.org/wiki/API_v0.6#Changesets_2)
+[changesets by OSM doc](https://wiki.openstreetmap.org/wiki/API_v0.6#Changesets_2){:target="_blank"}
 
 > Every [modification](#operations-on-elements) of one or more of the elements has to reference an open changeset.
 
@@ -38,15 +38,15 @@ Elements are the basic components of OpenStreetMap's conceptual data model of th
     - 10,000 edits on a single changeset,
     - the changeset has been open for more than 24 hours,
     - there have been no changes/API calls related to a changeset in 1 hour (i.e. idle timeout).
-  - Changesets are specifically not atomic - elements added within a changeset will be visible to other users before the changeset is closed.
-  - Changesets facilitate the implementation of rollbacks.
-  - Server stores a bounding box for each changeset and allows users to query changesets in an area:
-    - API computes the bounding box associated with a changeset.
-  - It is not possible to delete changesets at the moment, even if they don't contain any changes.
+- Changesets are specifically not atomic - elements added within a changeset will be visible to other users before the changeset is closed.
+- Changesets facilitate the implementation of rollbacks.
+- Server stores a bounding box for each changeset and allows users to query changesets in an area:
+  - API computes the bounding box associated with a changeset.
+- It is not possible to delete changesets at the moment, even if they don't contain any changes.
 
 [^3]:
 
-[tags by OSM docs](https://wiki.openstreetmap.org/wiki/Tags)
+[tags by OSM docs](https://wiki.openstreetmap.org/wiki/Tags){:target="_blank"}
 
 Every element and [changeset](#changesets-attribute) may have any number of tags. A tag is a Key-Value pair of Unicode strings of up to 255 full unicode characters (not bytes) each.
 
