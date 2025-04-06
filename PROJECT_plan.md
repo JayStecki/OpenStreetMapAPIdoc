@@ -12,9 +12,9 @@
 > Also available on JIRA. Deadlines:
 - [x]  March 13 - Organizational meeting (live).
 - [x]  March 21 - Project plan.
-- [ ]  April 13 - 20% draft.
-- [ ]  April 21 - 100% draft (live checking).
-- [ ]  May 10 - project fully reviewed (supervisor + peer reviewers).
+- [x]  April 06 - 20% draft.
+- [ ]  April 27 - 100% draft (live checking).
+- [ ]  May 05 - project fully reviewed (supervisor + peer reviewers).
 - [ ]  May 17 - project published with changes.
 - [ ]  May 24 - final exam, graduation.
 > Bottlenecks identified (2), presentation preparedness time secured.
