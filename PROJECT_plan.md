@@ -138,12 +138,12 @@ static webpage generator:
     - [x] apply changes (add PROJECT_devScenario),
   - [x] set up and test the environment,
     - [x] built eligible template (fix bug if needed or change template),
-    - [ ] put 15% of content to the template. 
-- [ ] April 13 - 20% draft:
+    - [x] put 15% of content to the template. 
+- [x] April 06 - 20% draft:
   - [ ] 100% content in new template,
-- [ ] April 21 - 100% draft (live checking),
+- [ ] April 27 - 100% draft (live checking),
   - [ ] adjustments in meantime of review,
-- [ ] May 10 - project fully reviewed (supervisor, peer reviewers).
+- [ ] May 05 - project fully reviewed (supervisor, peer reviewers).
   - [ ] fix bugs, merge changes.  
 - [ ] May 17 - project published with changes.
   - [ ] create presentation.
