@@ -68,7 +68,7 @@ Within the OSM database, we store these attributes for nodes, ways and relations
 | ```id``` | integer (64-bit) | Identifying the element. Positive (>0) and negative (<0) values with their [inside logic](#id-positive-and-negative-values-logic). |
 | ```user``` | (character) string | The display name of the user who last modified the object ([**informative only and may be empty**](#user-name-changing-case)). |
 | ```uid``` | integer | The numeric identifier of the user who last modified the object. **User identifiers never change.** |
-| ```timestamp``` | [W3C standard date and time formats](https://www.w3.org/TR/NOTE-datetime){:target="_blank"} | Time of the last modification - without fractional seconds (e.g. ==2016-12-31T23:59:59Z==). |
+| ```timestamp``` | [^^W3C standard date and time formats^^](https://www.w3.org/TR/NOTE-datetime){:target="_blank"} | Time of the last modification - without fractional seconds (e.g. ==2016-12-31T23:59:59Z==). |
 | ```visible``` | ==true== or ==false== | Whether the object is deleted or not in the database (if ==visible=false== then the object should only be returned by history calls). |
 | ```version``` | integer | The edit version of the object specified by the [server logic](#version-manage-logic). |
 | ```changeset``` | integer | The changeset number in which the object was created or updated (supporting 64-bit is recommended in applications for compatibility with long term evolution of the OSM database, but applications that only query data without updating them may ignore this informative attribute). |

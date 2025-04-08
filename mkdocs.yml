@@ -28,6 +28,7 @@ theme:
   - social
 nav:
   - Welcome to OSM API doc: index.md
+  - When NOT to use the API: when_NOT_to_use_the_API.md
   - Overview: Overview.md
   - General informations:
     - Info: general_informations/info.md
@@ -42,7 +43,6 @@ nav:
     - Internal errors with response: general_informations/internal_errors_while_generating_a_response.md
   - Endpoints (API calls):
     - Miscellaneous: endpoints_(API_calls)/miscellaneous.md
-  - When NOT to use the API: when_NOT_to_use_the_API.md
   - Semantic versioning: semantic_versioning.md
 
 markdown_extensions:

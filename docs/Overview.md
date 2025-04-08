@@ -3,9 +3,9 @@
 ## Documentation
 The documentation is organized as follows:
 
+- When NOT to use the API
 - General information
 - Endopoints (API calls)
-- When NOT to use the API
 - Semantic versioning
 - Further reading
 
