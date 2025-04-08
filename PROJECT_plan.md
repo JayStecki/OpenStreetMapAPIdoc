@@ -14,7 +14,8 @@
 - [x]  March 21 - Project plan.
 - [x]  April 06 - 20% draft.
 - [ ]  April 27 - 100% draft (live checking).
-- [ ]  May 05 - project fully reviewed (supervisor + peer reviewers).
+- [ ]  May 05 - project reviewed (peer reviewers).
+- [ ]  May 10 - project fully reviewed (supervisor).
 - [ ]  May 17 - project published with changes.
 - [ ]  May 24 - final exam, graduation.
 > Bottlenecks identified (2), presentation preparedness time secured.
@@ -143,8 +144,9 @@ static webpage generator:
   - [ ] 100% content in new template,
 - [ ] April 27 - 100% draft (live checking),
   - [ ] adjustments in meantime of review,
-- [ ] May 05 - project fully reviewed (supervisor, peer reviewers).
-  - [ ] fix bugs, merge changes.  
+- [ ] May 05 - project reviewed (peer reviewers).
+  - [ ] fix bugs, merge changes,
+  - [ ] supervisor's review between May 05-10.
 - [ ] May 17 - project published with changes.
   - [ ] create presentation.
 - [ ] May 24 - final exam, graduation.
