@@ -23,7 +23,7 @@ Every modification [CRUD](elements.md#operations-on-osm-elements) of one or more
 ??? info "Bounding box for [nodes](elements.md#elements-description)."
     Any change to a node, including deletion, adds the node's old and new location to the bounding box.
 
-??? info ""Bounding box for [ways](elements.md#elements-description)."
+??? info "Bounding box for [ways](elements.md#elements-description)."
     Any change to a way, including deletion, adds all of the way's nodes to the bounding box.
 
 ??? info "Bounding box for [relations](elements.md#elements-description)."

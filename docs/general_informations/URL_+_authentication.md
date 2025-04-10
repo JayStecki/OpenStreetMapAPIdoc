@@ -36,7 +36,7 @@ The required OAuth scopes to be able to use the full API v0.6 are:
 HTTP status codes (400-500).
 
 === "400 (**Bad request**)"
-    If you are accessing the cgimap version of the API, this error code will be returned when OAuth fails with a ==Bad OAuth request==.
+    If you are accessing the CGImap version of the API, this error code will be returned when OAuth fails with a ==Bad OAuth request==.
 === "401 (**Unauthorized**)"
     Login was unsuccessful.
 === "403 (**Forbidden**)"

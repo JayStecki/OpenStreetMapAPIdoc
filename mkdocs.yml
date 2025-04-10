@@ -2,13 +2,16 @@ site_name: OpenStreetMap API doc
 theme: 
   name: material
   language: en
+  favicon: assets/faviconJS.ico
   font:
     text: Roboto
     code: Lekton
+  theme:
+  features:
+    - content.code.copy
   icon:
     logo: fontawesome/solid/map
     annotation: material/plus-circle
-  favicon: assets/faviconJS.ico
   palette:
     # Light mode
     - scheme: default
@@ -39,10 +42,13 @@ nav:
     - Maximum string lenghts: general_informations/maximum_string_lenghts.md
     - Reliably identifying users: general_informations/reliably_identifying_users.md
     - Version num and opti lock: general_informations/version_numbers_and_optimistic_locking.md
-    - Faking the correct HTTP: general_informations/faking_the_correct_HTTP_methods.md
     - Internal errors with response: general_informations/internal_errors_while_generating_a_response.md
   - Endpoints (API calls):
-    - Miscellaneous: endpoints_(API_calls)/miscellaneous.md
+    - Miscellaneous:
+      - Get API versions: endpoints_(API_calls)/get_api_versions.md
+      - Get API capabilities: endpoints_(API_calls)/get_api_capabilities.md
+      - Get API map: endpoints_(API_calls)/get_api_map.md
+      - Get API permissions: endpoints_(API_calls)/get_api_permissions.md
   - Semantic versioning: semantic_versioning.md
 
 markdown_extensions:

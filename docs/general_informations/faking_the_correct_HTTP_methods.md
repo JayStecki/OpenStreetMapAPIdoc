@@ -1,1 +1,0 @@
-Hello World! Faking the correct HTTP methods

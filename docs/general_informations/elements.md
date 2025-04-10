@@ -4,14 +4,14 @@ There are API calls to [CRUD](#operations-on-osm-elements) the three basic **ele
 
 Elements are the basic components of OpenStreetMap's conceptual data model of the physical world. There are **three types** of elements:
 
-- **nodes** (defining points in space). Example:
-    ```xml
+- **nodes** (defining points in space).
+    ``` xml title="node_example.xml" linenums="1"
     <node id="25496583" lat="51.5173639" lon="-0.140043" version="1" changeset="203496" user="80n" uid="1238" visible="true" timestamp="2007-01-28T11:40:26Z">
     <tag k="highway" v="traffic_signals"/>
     </node>
     ```
-- **ways** (defining linear features and area boundaries as ordered list of nodes). Example:
-    ```xml
+- **ways** (defining linear features and area boundaries as ordered list of nodes).
+    ``` xml title="way_example.xml" linenums="1"
     <way id="5090250" visible="true" timestamp="2009-01-19T19:07:25Z" version="8" changeset="816806" user="Blumpsy" uid="64226">
     <nd ref="822403"/>
     <nd ref="21533912"/>
@@ -28,8 +28,8 @@ Elements are the basic components of OpenStreetMap's conceptual data model of th
     <tag k="oneway" v="yes"/>
     </way>
     ```
-- **relations** (defining how other elements work together as structured collections of objects – nodes, ways and other relations). Example:
-    ```xml
+- **relations** (defining how other elements work together as structured collections of objects – nodes, ways and other relations).
+    ``` xml title="relation_example.xml" linenums="1"
     <relation id="13092746" visible="true" version="7" changeset="118825758" timestamp="2022-03-23T15:05:48Z" user="" uid="">
     <member type="node" ref="5690770815" role="stop"/>
     <member type="node" ref="5751940550" role="stop"/>

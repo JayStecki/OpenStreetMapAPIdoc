@@ -10,7 +10,7 @@
 !!! note "OSM API source code with CGI"
     Some of the API calls on osm.org are handled by CGImap and its source code is also available on [^^GitHub^^](https://github.com/zerebubuth/openstreetmap-cgimap){:target="_blank"}.
 
-This Editing API is based on the ideas of the RESTful API. Requests to modify the database are authorized using or [**OAuth**](https://wiki.openstreetmap.org/wiki/OAuth){:target="_blank"}(1).
+This Editing API is based on the ideas of the RESTful API. Requests to modify the database are authorized using or [^^**OAuth**^^](https://wiki.openstreetmap.org/wiki/OAuth){:target="_blank"}(1).
 { .annotate }
 
 1. Read requests **do not** require authorization (except user details).

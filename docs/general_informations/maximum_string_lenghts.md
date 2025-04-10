@@ -1,1 +1,1 @@
-Hello Wrold! max string lenghts
+The current rails and [CGImap](info.md) implementation of the API limits the length of ==Key== and ==Value== strings for elements, changeset and user preference tags, and relation member roles, to a **maximum of 255 UTF-8 unicode characters**.
