@@ -10,23 +10,28 @@ Returns the permissions granted to the current API connection.
 
 ## Request
 
-**`GET`** `/api/0.6/permissions`
+![](https://img.shields.io/badge/GET-green)
+
+```
+/api/0.6/permissions
+```
 
 ## Response
 
-Returns the single permissions element containing the permission tags (content type ==application/json==).
+![](https://img.shields.io/badge/Response-200%20OK-brightgreen)
 
-``` json title="apiPermission_example.json" linenums="1" hl_lines="4"
-{
- "version": "0.6",
- "generator": "OpenStreetMap server",
- "permissions": ["allow_read_prefs", ..., "allow_read_gpx", "allow_write_gpx"]
-}
+``` xml linenums="1"
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+    <permissions>
+  </permissions>
+</osm>
 ```
+## Additional
 
-??? note "Currently following permissions corresponding to the deprecated ones."
+??? info "Currently following permissions corresponding to the older ones."
     | OAuth 2.0 | OAuth 1.0 |
-    | --- | --- |
+    | :---: | :---: |
     | `allow_read_prefs` | ==read user preferences== |
     | `allow_read_prefs` | ==modify user preferences== |
     | `allow_write_diary` | ==allow_write_diary== |

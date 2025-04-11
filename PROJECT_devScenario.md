@@ -3,7 +3,7 @@
 ## Persona
 > Frontend Dev (junior/mid) delegated to code simple plugin (via usability task), that will be using OpenStreetMap API.
 ## Usability task
-> From approximetly 40 endpoints at least 1/3 (min. 13) must be selected and used to easy work with elements[^1](#footnotes), changesets[^2](#footnotes) and tags[^3](#footnotes). Include JSON format only for choosed endpoints.
+> From approximetly 40 endpoints at least 1/3 (min. 13) must be selected and used to easy work with elements[^1](#footnotes), changesets[^2](#footnotes) and tags[^3](#footnotes). Include XML format only for choosed endpoints.
 ---
 ### Footnotes
 [^1]:

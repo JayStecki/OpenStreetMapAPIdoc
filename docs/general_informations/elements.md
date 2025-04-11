@@ -53,18 +53,18 @@ Elements are the basic components of OpenStreetMap's conceptual data model of th
     ```
 ### Operations on OSM elements
 | CRUD (create, read, update, delete) | calls |
-| --- | --- |
-| `GET` | :material-check: :read, :history, :multifetch, :relations for element, :ways for node, :full |
-| `POST` | :material-check-all: :create, :redaction |
-| `PUT` | :material-update: :update |
-| `DELETE` | :material-close: :delete |
+| :---: | --- |
+| ![](https://img.shields.io/badge/GET-green) | :material-check: :read, :history, :multifetch, :relations for element, :ways for node, :full |
+| ![](https://img.shields.io/badge/POST-blue) | :material-check-all: :create, :redaction |
+| ![](https://img.shields.io/badge/PUT-lightblue) | :material-update: :update |
+| ![](https://img.shields.io/badge/DELETE-red) | :material-close: :delete |
 
 ## Common attributes
 
 Within the OSM database, we store these attributes for nodes, ways and relations. Your application may not need to make use of all of them, and some third-party extracts produced from OSM data may not reproduce them all.
 
 | Name | Value | Description |
-| --- | --- | --- |
+| :---: | --- | --- |
 | ```id``` | integer (64-bit) | Identifying the element. Positive (>0) and negative (<0) values with their [inside logic](#id-positive-and-negative-values-logic). |
 | ```user``` | (character) string | The display name of the user who last modified the object ([**informative only and may be empty**](#user-name-changing-case)). |
 | ```uid``` | integer | The numeric identifier of the user who last modified the object. **User identifiers never change.** |

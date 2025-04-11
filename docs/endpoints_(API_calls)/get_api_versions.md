@@ -2,18 +2,21 @@ Returns a list of available API versions supported by this instance.
 
 ## Request
 
-**`GET`** `/api/versions`
+![](https://img.shields.io/badge/GET-green)
+
+```
+/api/versions
+```
 
 ## Response
 
-Version number.
+![](https://img.shields.io/badge/Response-200%20OK-brightgreen)
 
-``` json title="apiVersion_example.json" linenums="1" hl_lines="4-5"
-{
- "version": "0.6",
- "generator": "OpenStreetMap server",
- "api": {
-  "versions": ["0.6"]
- }
-}
+``` xml linenums="1"
+<?xml version="1.0" encoding="UTF-8"?>
+<osm generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+    <api>
+        <version>0.6</version>
+    </api>
+</osm>
 ```

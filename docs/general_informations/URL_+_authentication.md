@@ -1,11 +1,19 @@
 The API (live-api) is currently accessible using the following URL:
 
+```
+https://api.openstreetmap.org
+```
+
 [See the live-api :material-map-outline:](https://api.openstreetmap.org){ target=_blank .md-button }
 
 When testing your software against the API you should consider using(1):
 { .annotate }
 
 1. Your account for the live service is not in the same database, so you probably need a new username and password for the test service.
+
+```
+https://master.apis.dev.openstreetmap.org
+```
 
 [See the dev-api :fontawesome-solid-map:](https://master.apis.dev.openstreetmap.org/){ target=_blank .md-button .md-button--primary }
 
