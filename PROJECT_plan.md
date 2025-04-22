@@ -38,7 +38,7 @@ Navigation in Unified Modeling Language (UML):
 > Info: Requirements checked with Hemingway App.[^2](#footnotes)
 
 ### Concept
-^[Back to plan](#plan)^
+[**Back to plan**](#plan)
 > Migrate existing API. Reuse, reduce, improve, secure (RRIS).
 1. Find item (open source API) to migration:
 <!--
@@ -75,7 +75,7 @@ Navigation in Unified Modeling Language (UML):
     - wiki format is deprecated,
     - usability can be increased.
 
-^[back to concept](#concept)^
+[**Back to concept**](#concept)
 #### Model
 > Model data:
 
@@ -98,7 +98,7 @@ Navigation in Unified Modeling Language (UML):
             - request sample (cURL, HTTPie)
             - response sample (JSON).
 <!--- Convergence factor between item and model: oAuth --->
-^[back to concept](#concept)^
+[**Back to concept**](#concept)
 #### Framework
 [mkdocs](https://www.mkdocs.org)
 > Model data:
@@ -109,7 +109,7 @@ static webpage generator:
 > Model format:
 - three columns with *reverse usability*.
 
-^[back to concept](#concept)^
+[**Back to concept**](#concept)
 #### Backup framework
 [just-the-docs](https://just-the-docs.github.io/just-the-docs/)
 > Model data:
@@ -126,9 +126,9 @@ static webpage generator:
 #### Scenario
 [devScenario](PROJECT_devScenario.md) is dedicated to get the results.
 
-^[back to concept](#concept)^
+[**Back to concept**](#concept)
 ### Tasks
-^[Back to plan](#plan)^
+[**Back to plan**](#plan)
 - [x] March 13 - Organizational meeting (live):
   - [x] establish the rules,
   - [x] create plan,
@@ -141,6 +141,7 @@ static webpage generator:
     - [x] built eligible template (fix bug if needed or change template),
     - [x] put 15% of content to the template. 
 - [x] April 06 - 20% draft:
+  - [x] project status chech (online meeting),
   - [ ] 100% content in new template,
 - [ ] April 27 - 100% draft (live checking),
   - [ ] adjustments in meantime of review,
@@ -151,13 +152,13 @@ static webpage generator:
   - [ ] create presentation.
 - [ ] May 24 - final exam, graduation.
 ### Reference
-^[Back to plan](#plan)^
+[**Back to plan**](#plan)
 
 [API knowledge source](https://idratherbewriting.com/learnapidoc/)
 
 [OSM main page](https://wiki.openstreetmap.org/w/index.php?title=Pl:Strona_g%C5%82%C3%B3wna&uselang=pl)
 ### Result
-^[Back to plan](#plan)^
+[**Back to plan**](#plan)
 > Migration completed if:
 - ~~Option 1 - minimal - two colums with increased usability:~~
   - [ ] ~~wiki -> just-the-docs.~~
@@ -188,4 +189,4 @@ Result for points 1-8:
 - 0 of 17 sentences are hard to read. 1 weakener.
 - 0 words with simpler alternatives.
 
-^[Back to plan](#plan)^
+[**Back to plan**](#plan)

@@ -32,7 +32,7 @@ GET/api/0.6/map?==bbox=left,bottom,right,top== - where:
 
 ![](https://img.shields.io/badge/GET-green)
 
-```
+``` title="Example data"
 /api/0.6/map?bbox=100,50,100,50
 ```
 
@@ -40,7 +40,7 @@ GET/api/0.6/map?==bbox=left,bottom,right,top== - where:
 
 ![](https://img.shields.io/badge/Response-200%20OK-brightgreen)
 
-``` xml linenums="1"
+``` xml linenums="1" hl_lines="3"
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="openstreetmap-cgimap 2.0.1.2504041438 (3164272 faffy.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
     <bounds minlat="50.0000000" minlon="100.0000000" maxlat="50.0000000" maxlon="100.0000000"/>

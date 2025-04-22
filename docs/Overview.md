@@ -4,10 +4,11 @@
 The documentation is organized as follows:
 
 - When NOT to use the API
-- General information
+- General informations
 - Endopoints (API calls)
 - Semantic versioning
-- Further reading
+- ~~Further reading~~
+  <!-- uaktulanić przed ostatnim deployem -->
 
 ## Support
 In any questions or informations please contact the [^^OSM admins and community^^](https://wiki.openstreetmap.org/wiki/Contact_channels){:target="_blank"} (*via* forum,  mail, various chats, social networks, webpage, etc.).

@@ -25,7 +25,7 @@ This API call is meant to provide information about the capabilities and limitat
 
 ![](https://img.shields.io/badge/Response-200%20OK-brightgreen)
 
-``` xml linenums="1"
+``` xml linenums="1" hl_lines="4-13"
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
     <api>
