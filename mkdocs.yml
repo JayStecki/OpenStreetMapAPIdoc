@@ -32,7 +32,7 @@ theme:
 nav:
   - Welcome to OSM API doc: index.md
   - When NOT to use the API: when_NOT_to_use_the_API.md
-  - Overview: overview.md
+  - Overview: overview_2.md
   - General informations:
     - Info: general_informations/info.md
     - URL + authentification: general_informations/URL_+_authentication.md
@@ -75,17 +75,17 @@ nav:
   - Semantic versioning: semantic_versioning.md
 
 markdown_extensions:
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
+  - attr_list
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.mark
   - pymdownx.snippets
