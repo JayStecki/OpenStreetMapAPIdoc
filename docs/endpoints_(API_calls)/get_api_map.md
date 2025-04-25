@@ -60,3 +60,7 @@ GET/api/0.6/map?==bbox=left,bottom,right,top== - where:
 
 === "400 (**Bad request**)"
     The ==latitudes== must be between -90 and 90, ==longitudes== between -180 and 180 and the **minima must be less than the maxima**.
+    
+    The maximum ==bbox== size is 0.250000, and your request was too large. Either **request a smaller area**, or use planet.osm
+=== "509 (**Bandwidth limit exceeded**)"
+    Error: You have **downloaded too much** data. Please try again later.

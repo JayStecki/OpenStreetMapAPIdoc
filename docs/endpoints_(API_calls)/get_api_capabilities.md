@@ -25,25 +25,28 @@ This API call is meant to provide information about the capabilities and limitat
 
 ![](https://img.shields.io/badge/Response-200%20OK-brightgreen)
 
-``` xml linenums="1" hl_lines="4-13"
+``` xml linenums="1" hl_lines="4-21"
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-    <api>
-        <version minimum="0.6" maximum="0.6"/>
-        <area maximum="0.25"/>
-        <note_area maximum="25"/>
-        <tracepoints per_page="5000"/>
-        <waynodes maximum="2000"/>
-        <relationmembers maximum="32000"/>
-        <changesets maximum_elements="10000" default_query_limit="100" maximum_query_limit="100"/>
-        <notes default_query_limit="100" maximum_query_limit="10000"/>
-        <timeout seconds="300"/>
-        <status database="online" api="online" gpx="online"/>
-    </api>
-    <policy>
-        <imagery>
-    </imagery>
-    </policy>
+<osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="https://www.openstreetmap.org/copyright" license="https://opendatacommons.org/licenses/odbl/1-0/">
+	<api>
+		<version minimum="0.6" maximum="0.6"/>
+		<area maximum="0.25"/>
+		<note_area maximum="25"/>
+		<tracepoints per_page="5000"/>
+		<waynodes maximum="2000"/>
+		<relationmembers maximum="32000"/>
+		<changesets maximum_elements="10000" default_query_limit="100" maximum_query_limit="100"/>
+		<notes default_query_limit="100" maximum_query_limit="10000"/>
+		<timeout seconds="300"/>
+		<status database="online" api="online" gpx="online"/>
+	</api>
+	<policy>
+		<imagery>
+			<blacklist regex=".*\.google(apis)?\..*/(vt|kh)[\?/].*([xyz]=.*){3}.*"/>
+			<blacklist regex="http://xdworld\.vworld\.kr:8080/.*"/>
+			<blacklist regex=".*\.here\.com[/:].*"/>
+		</imagery>
+	</policy>
 </osm>
 ```
 

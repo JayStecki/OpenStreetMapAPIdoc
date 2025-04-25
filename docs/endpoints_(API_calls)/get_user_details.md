@@ -27,7 +27,7 @@ Returns an XML document with the home location and the `display_name` of the **l
         <img href="https://master.apis.dev.openstreetmap.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjUzOCwicHVyIjoiYmxvYl9pZCJ9fQ==--814f0f2f9339174fd575cddf4712700b14608c53/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlsxMDAsMTAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--32ac28fb572ae93b1714c8abd2474f71fba86c73/AVATAR_gitHub_JS2.png"/>
         <roles>
   </roles>
-        <changesets count="0"/>
+        <changesets count="3"/>
         <traces count="0"/>
         <blocks>
             <received count="0" active="0"/>
@@ -48,5 +48,5 @@ Returns an XML document with the home location and the `display_name` of the **l
 
 ### Error codes
 
-=== "401 (**Unauthorized**)"
-    The request is unauthenticated (Couldn't authenticate you).
+=== "404 (**Not Found**)"
+    Requested resource could not be found (*Object not found*).

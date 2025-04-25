@@ -7,7 +7,7 @@ The documentation is organized as follows:
 - General informations
 - Endopoints (API calls)
 - Semantic versioning
-- Further reading
+- ~~Further reading~~
   <!-- uaktulanić przed ostatnim deployem -->
 
 ## Support

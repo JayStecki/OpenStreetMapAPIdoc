@@ -32,7 +32,7 @@ theme:
 nav:
   - Welcome to OSM API doc: index.md
   - When NOT to use the API: when_NOT_to_use_the_API.md
-  - Overview: overview_2.md
+  - Overview: overview.md
   - General informations:
     - Info: general_informations/info.md
     - URL + authentification: general_informations/URL_+_authentication.md
@@ -49,6 +49,10 @@ nav:
       - Get API capabilities: endpoints_(API_calls)/get_api_capabilities.md
       - Get API map: endpoints_(API_calls)/get_api_map.md
       - Get API permissions: endpoints_(API_calls)/get_api_permissions.md
+    - Changesets:
+      - Open changeset: endpoints_(API_calls)/open_changeset.md
+      - Close changeset: endpoints_(API_calls)/close_changeset.md
+      - Get changesets: endpoints_(API_calls)/get_changesets.md
     - Elements:
       - Nodes:
         - Create node: endpoints_(API_calls)/create_node.md
@@ -65,8 +69,6 @@ nav:
         - Get relation: endpoints_(API_calls)/get_relation.md
         - Update relation: endpoints_(API_calls)/update_relation.md
         - Delete relation: endpoints_(API_calls)/delete_relation.md
-    - Changesets:
-      - Get changesets: endpoints_(API_calls)/get_changesets.md
     - Notes:
       - Create note: endpoints_(API_calls)/create_note.md
       - Get notes by bbox: endpoints_(API_calls)/get_notes_by_bbox.md

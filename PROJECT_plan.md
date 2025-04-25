@@ -141,7 +141,7 @@ static webpage generator:
     - [x] built eligible template (fix bug if needed or change template),
     - [x] put 15% of content to the template. 
 - [x] April 06 - 20% draft:
-  - [x] project status chech (online meeting),
+  - [x] project status check (online meeting),
   - [ ] 100% content in new template,
 - [ ] April 27 - 100% draft (live checking),
   - [ ] adjustments in meantime of review,
@@ -184,7 +184,7 @@ static webpage generator:
 [Hemingway editor web link](https://hemingwayapp.com/)
 
 Result for points 1-8:
-- Readability Grade 3 Good. Words:68
+- Readability Grade 3 Good. Words: 68
 - 0 of 17 sentences are very hard to read.
 - 0 of 17 sentences are hard to read. 1 weakener.
 - 0 words with simpler alternatives.

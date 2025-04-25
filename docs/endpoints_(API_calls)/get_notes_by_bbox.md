@@ -27,38 +27,95 @@ Returns the existing notes in the specified ==[bounding box](get_api_map.md)==. 
 /api/0.6/notes?bbox=
 ```
 
-Example data:
-
 | `bbox` | `limit` | `closed` |
 | :---: | :---:| :---:|
-| 0.10,51,0.10,51 | 1 | 2 |
-
-![](https://img.shields.io/badge/GET-green)
+| 14.182,49.969,19.011,51.839 | 3 | 5 |
 
 ``` title="Example call"
-/api/0.6/notes?bbox=0.10,51,0.10,51&limit=1&closed=2
+/api/0.6/notes?bbox=14.182,49.969,19.011,51.839&limit=3&closed=5
 ```
 
 ### Response
 
 ![](https://img.shields.io/badge/Response-200%20OK-brightgreen)
 
-``` xml linenums="1" hl_lines="14"
+``` xml linenums="1" hl_lines="14-74"
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-    <note lon="0.1000000" lat="51.0000000">
-        <id>86316</id>
-        <url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/86316</url>
-        <comment_url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/86316/comment</comment_url>
-        <close_url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/86316/close</close_url>
-        <date_created>2025-02-05 10:12:49 UTC</date_created>
+    <note lon="14.3922498" lat="50.0432752">
+        <id>78907</id>
+        <url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/78907</url>
+        <comment_url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/78907/comment</comment_url>
+        <close_url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/78907/close</close_url>
+        <date_created>2024-11-09 12:30:05 UTC</date_created>
         <status>open</status>
         <comments>
             <comment>
-                <date>2025-02-05 10:12:49 UTC</date>
+                <date>2024-11-09 12:30:05 UTC</date>
                 <action>opened</action>
-                <text>noteTest</text>
-                <html>&lt;p dir="auto"&gt;noteTest&lt;/p&gt;</html>
+                <text>Odyseova cesta (climbing):
+
+Suggested changes:
+author=Lukáš Čermák, 2010
+
+
+Submitted from https://osmapp.org/node/11660046022</text>
+                <html>&lt;p dir="auto"&gt;Odyseova cesta (climbing):&lt;/p&gt;
+
+&lt;p dir="auto"&gt;Suggested changes:
+&lt;br /&gt;author=Lukáš Čermák, 2010&lt;/p&gt;
+
+&lt;p dir="auto"&gt;Submitted from &lt;a href="https://osmapp.org/node/11660046022" rel="nofollow noopener noreferrer" dir="auto"&gt;https://osmapp.org/node/11660046022&lt;/a&gt;&lt;/p&gt;</html>
+            </comment>
+        </comments>
+    </note>
+    <note lon="14.3921871" lat="50.0432804">
+        <id>78906</id>
+        <url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/78906</url>
+        <comment_url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/78906/comment</comment_url>
+        <close_url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/78906/close</close_url>
+        <date_created>2024-11-09 12:29:33 UTC</date_created>
+        <status>open</status>
+        <comments>
+            <comment>
+                <date>2024-11-09 12:29:33 UTC</date>
+                <action>opened</action>
+                <text>Golem (climbing):
+
+Suggested changes:
+author=Emil Pohořelský, Lukáš Čermák, 2010
+
+
+Submitted from https://osmapp.org/node/11660046021</text>
+                <html>&lt;p dir="auto"&gt;Golem (climbing):&lt;/p&gt;
+
+&lt;p dir="auto"&gt;Suggested changes:
+&lt;br /&gt;author=Emil Pohořelský, Lukáš Čermák, 2010&lt;/p&gt;
+
+&lt;p dir="auto"&gt;Submitted from &lt;a href="https://osmapp.org/node/11660046021" rel="nofollow noopener noreferrer" dir="auto"&gt;https://osmapp.org/node/11660046021&lt;/a&gt;&lt;/p&gt;</html>
+            </comment>
+        </comments>
+    </note>
+    <note lon="17.6666290" lat="51.5801754">
+        <id>68803</id>
+        <url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/68803</url>
+        <comment_url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/68803/comment</comment_url>
+        <close_url>https://master.apis.dev.openstreetmap.org/api/0.6/notes/68803/close</close_url>
+        <date_created>2024-08-11 07:15:51 UTC</date_created>
+        <status>open</status>
+        <comments>
+            <comment>
+                <date>2024-08-11 07:15:51 UTC</date>
+                <uid>20836</uid>
+                <user>SchweizerFahrer</user>
+                <user_url>https://master.apis.dev.openstreetmap.org/user/SchweizerFahrer</user_url>
+                <action>opened</action>
+                <text>Droga już jest otwarta
+
+#OsmAnd</text>
+                <html>&lt;p dir="auto"&gt;Droga już jest otwarta&lt;/p&gt;
+
+&lt;p dir="auto"&gt;#OsmAnd&lt;/p&gt;</html>
             </comment>
         </comments>
     </note>
