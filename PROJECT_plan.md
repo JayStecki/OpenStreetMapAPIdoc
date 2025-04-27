@@ -13,7 +13,7 @@
 - [x]  March 13 - Organizational meeting (live).
 - [x]  March 21 - Project plan.
 - [x]  April 06 - 20% draft.
-- [ ]  April 27 - 100% draft (live checking).
+- [x]  April 27 - 100% draft (live checking).
 - [ ]  May 05 - project reviewed (peer reviewers).
 - [ ]  May 10 - project fully reviewed (supervisor).
 - [ ]  May 17 - project published with changes.
@@ -142,8 +142,8 @@ static webpage generator:
     - [x] put 15% of content to the template. 
 - [x] April 06 - 20% draft:
   - [x] project status check (online meeting),
-  - [ ] 100% content in new template,
-- [ ] April 27 - 100% draft (live checking),
+  - [x] 100% content in new template,
+- [x] April 27 - 100% draft (live checking),
   - [ ] adjustments in meantime of review,
 - [ ] May 05 - project reviewed (peer reviewers).
   - [ ] fix bugs, merge changes,
