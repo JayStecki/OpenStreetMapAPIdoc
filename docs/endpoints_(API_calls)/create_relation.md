@@ -46,7 +46,7 @@ In `request body` the ==way's ID==, ==role== and ==tag (type)== are also require
 ### Error codes
 
 === "400 (**Bad request**)"
-    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing**.<!--niepotrzebne pogrubienie-->
+    When there are errors parsing the XML (a text message explaining the error is returned). When a changeset ID is missing.
 === "405 (**Method not allowed**)"
     If the request is **not a POST** request.<!--niepotrzebne pogrubienie-->
 === "409 (**Conflict**)"
