@@ -41,7 +41,7 @@ In `request body` the ==node's IDs== and ==tag== are also required (check the ex
 ### Error codes
 
 === "400 (**Bad request**)"
-    When there are errors parsing the XML (a text message explaining the error is returned). When a changeset ID is missing, when there are too many nodes for a way.<!--niepotrzebne pogrubienie-->
+    When there are errors parsing the XML (a text message explaining the error is returned). When a changeset ID is missing, when there are too many nodes for a way.
 === "405 (**Method not allowed**)"
     If the request is **not a POST** request.<!--niepotrzebne pogrubienie-->
 === "409 (**Conflict**)"
