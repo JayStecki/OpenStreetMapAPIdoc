@@ -28,6 +28,6 @@
 === "404 (**Not Found**)"
     When no changeset with the given id could be found.
 === "405 (**Method Not Allowed**)"
-    If the request is not a (HTTP) **PUT** request.<!--niepotrzebne pogrubienie-->
+    If the request is not a (HTTP) **PUT** request.
 === "409 (**Conflict**)"
     If the changeset in question has already been closed either by the user, or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also, if the user trying to update the changeset is not the same as the one that created it.
