@@ -14,7 +14,7 @@ In `request body` the ==way's ID==, ==role== and ==tag (type)== are also require
 | Body | Inserts |
 | :---: | :---: |
 | `member role` | `outer` `inner` `forward` `backward` |
-|  `tag type`   |      `relation` `multipolygon`       |
+| `tag type` | `relation` `multipolygon` |
 
 ### Request
 
