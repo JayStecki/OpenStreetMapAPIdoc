@@ -42,7 +42,7 @@ In `request body` the ==node ID==, ==version==, ==longitude== and ==latitude== a
 === "409 (**Conflict**)"
     If the changeset in question has already been closed either by the user or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also, if the user trying to update the changeset is not the same as the one that created it.
 === "410 (**Gone**)"
-    If the element has been **deleted** (*Requested content is permanently deleted from the server*).<!--niepotrzebne pogrubienie-->
+    If the element has been deleted (*Requested content is permanently deleted from the server*).
 === "412 (**Precondition failed**)"
     When a node is still used by a way or is a member of a relation.
 === "429 (**Too many requests**)"
