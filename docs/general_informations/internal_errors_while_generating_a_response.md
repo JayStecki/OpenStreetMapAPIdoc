@@ -1,7 +1,7 @@
-Internal errors while generating a response. In the unlikely event of an **internal error** occurring while generating the response to an API call, an error element will be inserted. **Further processing stops at this point**.
+Internal errors while generating a response.<!--powtórzenie nagłówka--> In the unlikely event of an **internal error** occurring while generating the response to an API call, an error element will be inserted. **Further processing stops at this point**.<!--niepotrzebne pobrubienie-->
 
 !!! warning "Internal error with correct HTTP"
-    Even though the HTTP return code is 200, and the response is syntactically correct, the message will be incomplete, and **must be discarded** by editing applications. For further analysis, editing applications **should report** an internal API error back to the user, along with the error message returned by the API call.
+    Even though the HTTP return code is 200, and the response is syntactically correct, the message will be incomplete, and **must be discarded** by editing applications. For further analysis, editing applications **should report** an internal API error back to the user, along with the error message returned by the API call.<!--niepotrzebne pobrubienia-->
 
 ``` xml title="wayWithTag_example.xml" linenums="1" hl_lines="18"
 <?xml version="1.0" encoding="UTF-8"?>

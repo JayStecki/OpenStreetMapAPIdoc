@@ -3,9 +3,9 @@
 - :material-target: **One of the main OpenStreetMap API usability**.
 
 </div>
-
+<!--brak opisu-->
 !!! note "Required before creating/updating/deleting every element (node, way, relation)."
-    You should manually [close the changeset](close_changeset.md) after the process - or it will [close automatically](../general_informations/changesets.md#changesets-attributes).
+    You should manually [close the changeset](close_changeset.md) after the process, otherwise it will [close automatically](../general_informations/changesets.md#changesets-attributes).
 
 ### Request
 
@@ -37,4 +37,4 @@
 === "400 (**Bad request**)"
     When there are errors parsing the XML.
 === "405 (**Method not allowed**)"
-    If the request is not a (HTTP) **PUT** request.
+    If the request is not a (HTTP) **PUT** request.<!--niepotrzebne pogrubienie-->

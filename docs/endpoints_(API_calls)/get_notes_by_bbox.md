@@ -4,20 +4,20 @@
 
 </div>
 
-Returns the existing notes in the specified ==[bounding box](get_api_map.md)==. The notes will be ordered by the date of their last change, the most recent one will be first. The list of notes can be returned in several different forms (e.g. as executable JavaScript, XML, RSS, json and GPX) depending on the file extension(1). The comment properties [uid, user, user_url] will be omitted if the comment was anonymous.
+Returns the existing notes in the specified ==[bounding box](get_api_map.md)==. The notes will be ordered by the date of their last change; the most recent one will be first. The list of notes can be returned in several different forms (for example<!--STE-->, as executable JavaScript, XML, RSS, json and GPX), depending on the file extension(1). The comment properties [uid, user, user_url] will be omitted if the comment was anonymous.
 { .annotate }
 
-1. You can specify the format you want the results returned as - by specifying a file extension.
+1. You can specify the format you want the results returned as by specifying a file extension.
 
 ??? info "JOSM, Vespucci and [^^Planet OSM^^](https://planet.openstreetmap.org/notes/){:target="_blank"} output differences."
-    XML format returned by the API is different from the, equally undocumented, format used for "osn" format files.
+    XML format returned by the API is different from the equally undocumented format used for "osn" format files.
 
 !!! note "Parameters need to call."
-    | Parameter | Description | Default value | Allowed values |
-    | :---: | --- | :---: | --- |
-    | `bbox` | coordinates bounding the area | **none, parameter required** | floating point numbers in degrees, expressing a valid ==bounding box==, not larger than the configured size limit (25 square degrees), not overlapping the dateline |
-    | `limit` | number of entries returned | 100 | between 1 and 10000 |
-    | `closed` | number of days a note needs to be closed to no longer be returned | 7 | 0 means only open notes are returned / -1 means all notes are returned |
+    | Parameter | Description                                                       |        Default value         | Allowed values                                                                                                                                                      |
+    | :-------: | ----------------------------------------------------------------- | :--------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    |  `bbox`   | coordinates bounding the area                                     | **none, parameter required** | floating point numbers in degrees, expressing a valid ==bounding box==, not larger than the configured size limit (25 square degrees), not overlapping the dateline |
+    |  `limit`  | number of entries returned                                        |             100              | between 1 and 10000                                                                                                                                                 |
+    | `closed`  | number of days a note needs to be closed to no longer be returned |              7               | 0 means only open notes are returned / -1 means all notes are returned                                                                                              |
 
 ### Request
 
@@ -27,9 +27,9 @@ Returns the existing notes in the specified ==[bounding box](get_api_map.md)==. 
 /api/0.6/notes?bbox=
 ```
 
-| `bbox` | `limit` | `closed` |
-| :---: | :---:| :---:|
-| 14.182,49.969,19.011,51.839 | 3 | 5 |
+|           `bbox`            | `limit` | `closed` |
+| :-------------------------: | :-----: | :------: |
+| 14.182,49.969,19.011,51.839 |    3    |    5     |
 
 ``` title="Example call"
 /api/0.6/notes?bbox=14.182,49.969,19.011,51.839&limit=3&closed=5

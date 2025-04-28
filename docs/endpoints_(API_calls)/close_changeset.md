@@ -3,9 +3,9 @@
 - :material-target: **One of the main OpenStreetMap API usability**.
 
 </div>
-
+<!--brak opisu-->
 !!! note "Required after creating/updating/deleting every element (node, way, relation)."
-    You should manually [close the changeset](close_changeset.md) after the process - or it will [close automatically](../general_informations/changesets.md#changesets-attributes).
+    You should manually [close the changeset](close_changeset.md) after the process, otherwise it will [close automatically](../general_informations/changesets.md#changesets-attributes).
 
 ### Request
 
@@ -30,4 +30,4 @@
 === "405 (**Method Not Allowed**)"
     If the request is not a (HTTP) **PUT** request.
 === "409 (**Conflict**)"
-    If the changeset in question has already been closed - either by the user itself, or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also if the user trying to update the changeset is not the same, as the one that created it.
+    If the changeset in question has already been closed either by the user, or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also, if the user trying to update the changeset is not the same as the one that created it.
