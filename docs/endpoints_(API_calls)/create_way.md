@@ -43,7 +43,7 @@ In `request body` the ==node's IDs== and ==tag== are also required (check the ex
 === "400 (**Bad request**)"
     When there are errors parsing the XML (a text message explaining the error is returned). When a changeset ID is missing, when there are too many nodes for a way.
 === "405 (**Method not allowed**)"
-    If the request is **not a POST** request.<!--niepotrzebne pogrubienie-->
+    If the request is not a **POST** request.
 === "409 (**Conflict**)"
     If the changeset in question has already been closed either by the user or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also, if the user trying to update the changeset is not the same as the one that created it.
 === "412 (**Precondition failed**)"
