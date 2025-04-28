@@ -39,7 +39,7 @@ The required OAuth scopes to be able to use the full API v0.6 are:
 - ```consume_messages```
 - ```send_messages```
 
-If you need compare it to older ones, check [here in additional](../../endpoints_(API_calls)/get_api_permissions#additional).
+If you need to compare it to older ones, check [here in additional](../../endpoints_(API_calls)/get_api_permissions#additional).
 
 ## Error codes
 

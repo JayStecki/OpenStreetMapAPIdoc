@@ -1,4 +1,4 @@
-There are API calls to [CRUD](#operations-on-osm-elements) the three basic **elements**, that make up the **map data** for OpenStreetMap. They each return or expect the data for the elements in a **XML format**.
+There are API calls to perform [CRUD](#operations-on-osm-elements) operations on the three basic **elements** that make up the **map data** for OpenStreetMap. Each call returns or expects the data for these elements in a **XML format**.
 
 ## Elements description
 
@@ -91,7 +91,7 @@ Within the OSM database, we store these attributes for nodes, ways and relations
 ??? info "Object's lifecycle."
     Newly created objects start at version 1 and the value is incremented by the server when a client uploads a new version of the object. The server will reject a new version of an object if the version sent by the client does not match the current version of the object in the database.
 
-## XML Caution and Notes on Nomenclature
+## XML Caution and Notes on Nomenclature (tu mamy kapitalizację, a wyzej nie!)
 
 The major tools in the OSM universe use an XML format following a XML schema definition that was first used by the API only. The set of Elements in OSM XML that are referred to as elements in documentation are a subset of the actual XML elements found in the data. i.e. the **term Element in XML** and the **term Element in OSM XML** are not synonymous.
 

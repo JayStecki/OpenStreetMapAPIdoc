@@ -1,12 +1,12 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main usability features OpenStreetMap API**.
 
 </div>
 
 Creates a new note for a specific geographic location (==longitude== and ==latitude== required) - which allows administrators/users to verify map data.
 
-!!! note "If the request is made as an authenticated user, the note is associated to that user account."
+!!! note "If the request is made by an authenticated user, the note is associated to that user account."
     If the OAuth access token used does not have the `allow_write_notes` permission, it is created as an anonymous note instead.
 
 ### Request

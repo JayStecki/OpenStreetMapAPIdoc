@@ -1,11 +1,11 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main usability features OpenStreetMap API**.
 
 </div>
 
 !!! note "Required after creating/updating/deleting every element (node, way, relation)."
-    You should manually [close the changeset](close_changeset.md) after the process - or it will [close automatically](../general_informations/changesets.md#changesets-attributes).
+    You can manually [close the changeset](close_changeset.md) after the process - or it will [close automatically](../general_informations/changesets.md#changesets-attributes).
 
 ### Request
 

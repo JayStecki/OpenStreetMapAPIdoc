@@ -1,8 +1,8 @@
 !!! warning "OSM API v0.6 on wiki is made by users (not admins)."
-    Please note that even a **source for this documentation** is [^^not an official documentation^^](https://github.com/openstreetmap/openstreetmap-website/commit/b9c85c269726faad3c2613b37f01683c8b59f5c6#commitcomment-125789988){:target="_blank"}(1).
+    Please note that even the **source for this documentation** is [^^not an official documentation^^](https://github.com/openstreetmap/openstreetmap-website/commit/b9c85c269726faad3c2613b37f01683c8b59f5c6#commitcomment-125789988){:target="_blank"}(1).
     { .annotate }
     
-    1. :facepalm: Documented there behaviors [^^may change in the future^^](https://github.com/openstreetmap/openstreetmap-website/commit/b9c85c269726faad3c2613b37f01683c8b59f5c6#commitcomment-125789640){:target="_blank"}.
+    1. :facepalm: Behaviors documented there [^^may change in the future^^](https://github.com/openstreetmap/openstreetmap-website/commit/b9c85c269726faad3c2613b37f01683c8b59f5c6#commitcomment-125789640){:target="_blank"}.
 
 !!! success "OSM API source code"
     The code powering the API can be found on [^^GitHub^^](https://github.com/openstreetmap/openstreetmap-website/tree/master/app/controllers/api){:target="_blank"}.

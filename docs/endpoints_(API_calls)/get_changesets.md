@@ -1,10 +1,10 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main usability features OpenStreetMap API**.
 
 </div>
 
-Method for getting a list of changesets, that supports filtering by different criteria(1). 
+A method for getting a list of changesets that supports filtering by different criteria(1). 
 { .annotate }
 
 1. Only changesets by **public users** are returned (returns at most 100 changesets).
@@ -15,13 +15,13 @@ Method for getting a list of changesets, that supports filtering by different cr
 !!! note "Parameters to specify the criteria."
     | Parameter | Syntax | Description |
     | :---: | :---: | :---: |
-    | `bbox` | min_lon,min_lat,max_lon,max_lat | find changesets within the given bounding box |
+    | `bbox` | min_lon,min_lat,max_lon,max_lat | Find changesets within the given bounding box |
     | `user` or `display_name` | #uid / #name | find changesets by the user with the given user id or display name (**providing both is an error**) |
-    | `time` | T1 / T1,T2 | find changesets closed after T1 / Find changesets that were closed after T1 and created before T2 |
-    | `from` | T1 (& to=T2) | Find changesets created at or after T1, and (optionally) before T2. to requires from, but not vice-versa. If to is provided alone, it has no effect. |
-    | `open` or `close` | true | Only finds changesets that are still open but excludes changesets that are closed or have reached the element limit for a changeset. Or only finds changesets that are closed or have reached the element limit |
+    | `time` | T1 / T1,T2 | Find changesets closed after T1 / Find changesets that were closed after T1 and created before T2 |
+    | `from` | T1 (& to=T2) | Find changesets created at or after T1, and (optionally) before T2. (Tu chyba czegoś brakuje?)to requires from, but not vice-versa. If to is provided alone, it has no effect. |
+    | `open` or `close` | true | Only (czy tu konieczne jest only??)finds changesets that are still open but excludes changesets that are closed or have reached the element limit for a changeset. Or (i tu też?) only finds changesets that are closed or have reached the element limit |
     | `changesets` | #cid | Finds changesets with the specified ids |
-    | `order` | newest / oldest | if newest (default), sort newest changesets first. If oldest, reverse order |
+    | `order` | newest / oldest | If newest (default), sort newest changesets first. If oldest, reverse order |
     | `limit` | number (integer) | Specifies the maximum number of changesets returned. A number between 1 and the maximum limit value (currently 100). If omitted, the default limit value is used (currently 100). The actual maximum and default limit values can be found with a [capabilities request](get_api_capabilities.md). |
 
 ### Request

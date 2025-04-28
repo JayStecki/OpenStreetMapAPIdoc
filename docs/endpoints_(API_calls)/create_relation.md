@@ -1,15 +1,15 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main usability features OpenStreetMap API**.
 
 </div>
 
 Creates a new relation element.
 
-!!! warning "To create new relation, **first** you must operate inside [open changeset](open_changeset.md)."
-    Insert the ongoing ==changeset ID== to the `request body`. After complete various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+!!! warning "To create a new relation,  you must **first** operate inside [open changeset](open_changeset.md)."
+    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you can [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the ==way's ID==, ==role== and ==tag (type)== is also required (check the example).
+In `request body` the ==way's ID==, ==role== and ==tag (type)== are also required (check the example).
 
 | Body | Inserts |
 | :---: | :---: |
@@ -52,6 +52,6 @@ In `request body` the ==way's ID==, ==role== and ==tag (type)== is also required
 === "409 (**Conflict**)"
     If the changeset in question has already been closed - either by the user itself or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also if the user trying to update the changeset is not the same, as the one that created it.
 === "412 (**Precondition failed**)"
-    When a relation has elements that do not exist (or exist anymore) or are not visible.
+    When a relation has elements that do not exist (or no longer exist) or are not visible.
 === "429 (**Too many requests**)"
     When the request has been blocked due to rate limiting.
