@@ -42,18 +42,18 @@ Returns the permissions granted to the current API connection.
 ## Additional
 
 ??? info "Currently following permissions corresponding to the older ones."
-    | OAuth 2.0 | OAuth 1.0 |
-    | :---: | :---: |
-    | `allow_read_prefs` | read user preferences |
-    | `allow_write_diary` | modify user preferences |
-    | `allow_write_diary` | create diary entries, comments and make friends |
-    | `allow_write_api` | modify the map |
-    | `allow_write_changeset_comments` | comment on changesets |
-    | `allow_write_redactions` | redact element versions |
-    | `allow_read_gpx` | read private GPS traces |
-    | `allow_write_gpx` | upload GPS traces |
-    | `allow_write_notes` | modify notes |
-    | `allow_write_redactions` | redact map data |
-    | `allow_write_blocks` | create and revoke user block |
-    | `allow_consume_messages` | read, update status and delete user messages |
-    | `allow_send_messages` | send private messages to other users |
+    |            OAuth 2.0             |                    OAuth 1.0                    |
+    | :------------------------------: | :---------------------------------------------: |
+    |        `allow_read_prefs`        |              read user preferences              |
+    |       `allow_write_diary`        |             modify user preferences             |
+    |       `allow_write_diary`        | create diary entries, comments and make friends |
+    |        `allow_write_api`         |                 modify the map                  |
+    | `allow_write_changeset_comments` |              comment on changesets              |
+    |     `allow_write_redactions`     |             redact element versions             |
+    |         `allow_read_gpx`         |             read private GPS traces             |
+    |        `allow_write_gpx`         |                upload GPS traces                |
+    |       `allow_write_notes`        |                  modify notes                   |
+    |     `allow_write_redactions`     |                 redact map data                 |
+    |       `allow_write_blocks`       |          create and revoke user block           |
+    |     `allow_consume_messages`     |  read, update status and delete user messages   |
+    |      `allow_send_messages`       |      send private messages to other users       |

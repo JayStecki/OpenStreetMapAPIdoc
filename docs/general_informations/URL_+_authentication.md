@@ -6,7 +6,7 @@ https://api.openstreetmap.org
 
 [See the live-api :material-map-outline:](https://api.openstreetmap.org){ target=_blank .md-button }
 
-When testing your software against the API you should consider using(1):
+When testing your software against the API you should consider using <!--nazwij to, czego trzeba użyć, bo w tej chwili to wygląda, jakby trzeba było użyć plusika-->(1):
 { .annotate }
 
 1. Your account for the live service is not in the same database, so you probably need a new username and password for the test service.
@@ -39,15 +39,16 @@ The required OAuth scopes to be able to use the full API v0.6 are:
 - ```consume_messages```
 - ```send_messages```
 
-If you need compare it to older ones, check [here in additional](../../endpoints_(API_calls)/get_api_permissions#additional).
-
+If you need to compare it to older ones, check [here](../../endpoints_(API_calls)/get_api_permissions#additional) in the Additional section.
+<!--odnośnik nie jest jasny-->
 ## Error codes
 
 HTTP status codes (400-500).
 
 === "400 (**Bad request**)"
-    If you are accessing the CGImap version of the API, this error code will be returned when OAuth fails with a ==Bad OAuth request==.
+    If you are accessing the CGImap version of the API, this error code will be returned when OAuth fails with a ==Bad OAuth request==. <!-- widzę, że używasz wyróżnienia do atrybutów, więc tutaj jest to niespójne. Zastanów się, co dokładnie oznacza wyróżnienie. Nazwy atrybutów zapisywałam jako 'code'-->
 === "401 (**Unauthorized**)"
     Login was unsuccessful.
 === "403 (**Forbidden**)"
     Login was successful but the user is not allowed to carry out the operation. The user may have been blocked, or the OAuth application may not have been given the required permissions. An application should display the error message (which will be translated if necessary) and, if it has an end-user UI, provide an easy way to access openstreetmap.org and view any messages there.
+    <!--bardzo ładny sposób prezentacji błędów!-->
