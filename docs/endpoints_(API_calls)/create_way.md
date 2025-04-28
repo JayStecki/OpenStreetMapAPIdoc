@@ -7,9 +7,9 @@
 Creates a new way element.
 
 !!! warning "To create new way, **first** you must operate inside [open changeset](open_changeset.md)."
-    Insert the ongoing ==changeset ID== to the `request body`. After complete various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the ==node's IDs== and ==tag== is also required (check the example).
+In `request body` the ==node's IDs== and ==tag== are also required (check the example).<!--wyróżniasz 'node's ID' — to nie jest nazwa atrybutu. Czy to jest "nd"? Pytam, bo sie nie zanm, a w przykładzie nie ma atrybutu 'id'. Poza tym nazwenictwo nie jest spójne, 'node's id' to nie jest nazwa atrybutu. Komentuje tylko dlatego, że nie widzę odzwierciedlenia w przykładzie, może dla użytkownika, który się zna, jest to jasne-->
 
 ### Request
 
@@ -41,11 +41,11 @@ In `request body` the ==node's IDs== and ==tag== is also required (check the exa
 ### Error codes
 
 === "400 (**Bad request**)"
-    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing**, when there are too many nodes for a way.
+    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing**, when there are too many nodes for a way.<!--niepotrzebne pogrubienie-->
 === "405 (**Method not allowed**)"
-    If the request is **not a POST** request.
+    If the request is **not a POST** request.<!--niepotrzebne pogrubienie-->
 === "409 (**Conflict**)"
-    If the changeset in question has already been closed - either by the user itself or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also if the user trying to update the changeset is not the same, as the one that created it.
+    If the changeset in question has already been closed either by the user or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also, if the user trying to update the changeset is not the same as the one that created it.
 === "412 (**Precondition failed**)"
     When a way has nodes that do not exist, were deleted or aren't visible.
 === "429 (**Too many requests**)"

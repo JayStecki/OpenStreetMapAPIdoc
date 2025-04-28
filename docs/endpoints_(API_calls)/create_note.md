@@ -4,9 +4,9 @@
 
 </div>
 
-Creates a new note for a specific geographic location (==longitude== and ==latitude== required) - which allows administrators/users to verify map data.
+Creates a new note for a specific geographic location (==longitude== and ==latitude== required), which allows administrators/users to verify map data.
 
-!!! note "If the request is made as an authenticated user, the note is associated to that user account."
+!!! note "If the request is made as an authenticated user, the note is associated with that user's account."
     If the OAuth access token used does not have the `allow_write_notes` permission, it is created as an anonymous note instead.
 
 ### Request
@@ -55,4 +55,4 @@ Creates a new note for a specific geographic location (==longitude== and ==latit
 === "400 (**Bad request**)"
     If the text field was not present.
 === "404 (**Not found**)"
-    This applies, if the request is not a (HTTP) POST request.
+    This applies if the request is not a (HTTP) POST request.
