@@ -55,4 +55,4 @@ Creates a new note for a specific geographic location (==longitude== and ==latit
 === "400 (**Bad request**)"
     If the text field was not present.
 === "404 (**Not found**)"
-    This applies if the request is not a (HTTP) POST request.
+    This applies if the request is not a (HTTP) **POST** request.
