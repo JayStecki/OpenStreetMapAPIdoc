@@ -44,6 +44,6 @@ In `request body` the ==node ID==, ==version==, ==longitude== and ==latitude== a
 === "410 (**Gone**)"
     If the element has been **deleted** (*Requested content is permanently deleted from the server*).<!--niepotrzebne pogrubienie-->
 === "412 (**Precondition failed**)"
-    When a node is still used by a way omember <!--coś tu poszło nie tak-->of a relation.
+    When a node is still used by a way or is a member of a relation.
 === "429 (**Too many requests**)"
     When the request has been blocked due to rate limiting.
