@@ -36,7 +36,7 @@ In `request body` the ==way ID== and ==version== are also required (check the ex
 ### Error codes
 
 === "400 (**Bad request**)"
-    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing**, when a node is outside the world. When the **version** of the provided element does not match the current database version of the element.<!--niepotrzebne pogrubienie-->
+    When there are errors parsing the XML (a text message explaining the error is returned). When a changeset ID is missing, when a node is outside the world. When the version of the provided element does not match the current database version of the element.
 === "404 (**Not found**)"
     When no element with the given ID could be found (*Requested resource could not be found*).
 === "409 (**Conflict**)"
