@@ -39,7 +39,7 @@ In `request body` the ==longitude== and ==latitude== are also required (check th
 ### Error codes
 
 === "400 (**Bad request**)"
-    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing**, when a node is outside the world.<!--niepotrzebne pogrubienie-->
+    When there are errors parsing the XML (a text message explaining the error is returned). When a changeset ID is missing, when a node is outside the world.
 === "405 (**Method not allowed**)"
     If the request is **not a POST** request.<!--niepotrzebne pogrubienie-->
 === "409 (**Conflict**)"
