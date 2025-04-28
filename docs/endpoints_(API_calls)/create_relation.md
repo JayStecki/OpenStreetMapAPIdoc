@@ -12,7 +12,7 @@ Creates a new relation element.
 In `request body` the ==way's ID==, ==role== and ==tag (type)== are also required (check the example).<!--tutaj w inny sposób oznaczasz atrybuty: nie włączaj "way", poza tym w przykładzie nie widzę atrybutu 'id', w tabeli poniżej również jest tylko 'role' i 'tag'-->
 
 | Body | Inserts |
-| :-----------: | :----------------------------------: |
+| :---: | :---: |
 | `member role` | `outer` `inner` `forward` `backward` |
 |  `tag type`   |      `relation` `multipolygon`       |
 
