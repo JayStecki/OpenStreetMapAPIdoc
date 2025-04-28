@@ -1,15 +1,15 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main usability features OpenStreetMap API**.
 
 </div>
 
-Deletes a existing relation element.
+Deletes an existing relation element.
 
-!!! warning "To delete existing relation, **first** you must operate inside [open changeset](open_changeset.md)."
-    Insert the ongoing ==changeset ID== to the `request body`. After complete various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+!!! warning "To delete an existing relation, you must **first** operate inside [open changeset](open_changeset.md)."
+    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you can [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the ==relation ID== and ==version== is also required (check the example).
+In `request body` the ==relation ID== and ==version== are also required (check the example).
 
 ### Request
 
@@ -36,7 +36,7 @@ In `request body` the ==relation ID== and ==version== is also required (check th
 ### Error codes
 
 === "400 (**Bad request**)"
-    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing**, when a node is outside the world. When the **version** of the provided element does not match the current database version of the element.
+    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing** or when a node is outside the world. When the **version** of the provided element does not match the current database version of the element.
 === "404 (**Not found**)"
     When no element with the given ID could be found (*Requested resource could not be found*).
 === "409 (**Conflict**)"

@@ -1,13 +1,13 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main usability features OpenStreetMap API**.
 
 </div>
 
-This API call is meant to provide information about the capabilities and limitations of the current API.
+This API call provides information about the capabilities and limitations of the current API.
 
 !!! note "Returned values may change at any time and this XML document only serves as an example."
-    Copyright, attribution, and license refers to legal information.
+    Copyright, attribution, and license refer to legal information.
 
 ## Request
 
@@ -55,7 +55,7 @@ This API call is meant to provide information about the capabilities and limitat
 !!! info "Attributes description"
     | attribute | description |
     | --- | --- |
-    | `version minimum` `maximum` | API call versions that the server will accept |
+    | `version minimum` `maximum` | API call versions that a server will accept |
     | `area maximum` | maximum area in square degrees that can be queried by API calls |
     | `tracepoints per_page` | maximum number of points in a single GPS trace (**possibly incorrect**) |
     | `waynodes maximum` | maximum number of nodes that a way may contain |
@@ -64,4 +64,4 @@ This API call is meant to provide information about the capabilities and limitat
     | `changesets default_query_limit` `maximum_query_limit` | default and maximum values of the limit parameter of changeset queries |
     | `notes default_query_limit` `maximum_query_limit` | default and maximum values of the limit parameter of notes bounding box queries and search |
     | `status` | returns either **online**, **readonly** or **offline** for each of the database, API and GPX API. The database field is informational, and the API/GPX fields indicate whether a client should expect read and write requests to work (**online**), only read requests to work (**readonly**) or no requests to work (**offline**). |
-    | `policy` | imagery blacklist lists all aerial and map sources, which are not permitted for OSM usage due to copyright. Editors must not show these resources as background layer |
+    | `policy` | the imagery blacklist lists all aerial and map sources which are not permitted for OSM usage due to copyright. Editors must not show these resources as background layer |

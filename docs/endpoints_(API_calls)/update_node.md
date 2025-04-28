@@ -1,18 +1,18 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main usability features OpenStreetMap API**.
 
 </div>
 
-Updates data for a existing node element.
+Updates data for an existing node element.
 
-!!! warning "To update existing node, **first** you must operate inside [open changeset](open_changeset.md)."
-    Insert the ongoing ==changeset ID== to the `request body`. After complete various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+!!! warning "To update existing node, you must **first** operate inside [open changeset](open_changeset.md)."
+    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you can [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the ==longitude==, ==latitude== and ==version== is also required (check the example).
+In `request body` the ==longitude==, ==latitude== and ==version== are also required (check the example).
 
 !!! note "A full representation of the element as it should be after the update has to be provided."
-    Any tags, way-node refs, and relation members that remain unchanged **must be in the update** as well. A version number must be provided as well, **it must match** the current version of the element in the database.
+    Any tags, way-node refs, and relation members that remain unchanged **must be in the update** as well. A version number must be provided as well. **It must match** the current version of the element in the database.
 
 ### Request
 
@@ -42,7 +42,7 @@ In `request body` the ==longitude==, ==latitude== and ==version== is also requir
 ### Error codes
 
 === "400 (**Bad request**)"
-    When there are errors parsing the XML - a text message explaining the error is returned (example: *Version is required when updating*). This can also happen if you forget to pass the Content-Length header. When a **changeset ID is missing**, when a node is outside the world.
+    When there are errors parsing the XML - a text message explaining the error is returned (example: *Version is required when updating*). This can also happen if you forget to pass the Content-Length header. When a **changeset ID is missing** or when a node is outside the world.
 === "404 (**Not found**)"
     When no element with the given ID could be found (*Requested resource could not be found*).
 === "409 (**Conflict**)"

@@ -1,12 +1,12 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main usability features OpenStreetMap API**.
 
 </div>
 
 The following command returns:
 
-- all nodes that are inside a given ==bounding box== and any relations that reference them.
+- All nodes that are inside a given ==bounding box== and any relations that reference them.
 - All ways that reference at least one node that is inside a given ==bounding box==, any relations that reference them (the ways), and any nodes outside the ==bounding box== that the ways may reference.
 - All relations that reference one of the nodes, ways or relations included due to the above rule (does not apply recursively).
 
@@ -18,7 +18,7 @@ GET/api/0.6/map?==bbox=left,bottom,right,top== - where:
 - **Top** is the latitude of the top (northernmost) side of the ==bounding box==.
 
 !!! note "Bounding box `bbox` explanation"
-    While this command returns those relations that reference the aforementioned nodes and ways, the reverse is not true: it does not (necessarily) return all of the nodes and ways that are referenced by these relations (this prevents unreasonably-large result sets).
+    While this command returns those relations that reference the aforementioned nodes and ways, the reverse is not true: it does not (necessarily) return all of the nodes and ways that are referenced by these relations (this prevents unreasonably large result sets).
     ??? example "Case example"
         For example, imagine the case where there is a relation named "England" that references every node in England. The nodes, ways, and relations are retrieved for a bounding box that covers a small portion of England. While the result would include the nodes, ways, and relations as specified by the rules for the command, including the "England" relation, it would (fortuitously) not include every node and way in England. If desired, the nodes and ways referenced by the "England" relation could be retrieved by their respective IDs. Also note that ways which intersect the bounding box but have no nodes within the bounding box will not be returned.
 

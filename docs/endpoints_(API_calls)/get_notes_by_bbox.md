@@ -1,10 +1,10 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main usability features OpenStreetMap API**.
 
 </div>
 
-Returns the existing notes in the specified ==[bounding box](get_api_map.md)==. The notes will be ordered by the date of their last change, the most recent one will be first. The list of notes can be returned in several different forms (e.g. as executable JavaScript, XML, RSS, json and GPX) depending on the file extension(1). The comment properties [uid, user, user_url] will be omitted if the comment was anonymous.
+Returns the existing notes in the specified ==[bounding box](get_api_map.md)==. The notes will be ordered by the date of their last change, the most recent one will be first. The list of notes can be returned in several different forms (e.g. as executable JavaScript, XML, RSS, json and GPX) depending on the file extension(1). The comment properties [uid, user, user_url] will be omitted if the comment is anonymous.
 { .annotate }
 
 1. You can specify the format you want the results returned as - by specifying a file extension.

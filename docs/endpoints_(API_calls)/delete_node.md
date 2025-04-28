@@ -1,15 +1,15 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main usability features OpenStreetMap API**.
 
 </div>
 
-Deletes a existing node element.
+Deletes an existing node element.
 
-!!! warning "To delete existing node, **first** you must operate inside [open changeset](open_changeset.md)."
-    Insert the ongoing ==changeset ID== to the `request body`. After complete various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+!!! warning "To delete an existing node, you must **first** operate inside [open changeset](open_changeset.md)."
+    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you can [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the ==node ID==, ==version==, ==longitude== and ==latitude== is also required (check the example).
+In `request body` the ==node ID==, ==version==, ==longitude== and ==latitude== are also required (check the example).
 
 ### Request
 
@@ -36,7 +36,7 @@ In `request body` the ==node ID==, ==version==, ==longitude== and ==latitude== i
 ### Error codes
 
 === "400 (**Bad request**)"
-    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing**, when a node is outside the world. When the **version** of the provided element does not match the current database version of the element.
+    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing** or when a node is outside the world. When the **version** of the provided element does not match the current database version of the element.
 === "404 (**Not found**)"
     When no element with the given ID could be found (*Requested resource could not be found*).
 === "409 (**Conflict**)"
@@ -44,6 +44,6 @@ In `request body` the ==node ID==, ==version==, ==longitude== and ==latitude== i
 === "410 (**Gone**)"
     If the element has been **deleted** (*Requested content is permanently deleted from the server*).
 === "412 (**Precondition failed**)"
-    When a node is still used by a way omember of a relation.
+    When a node is still used by a way omember (member?) of a relation.
 === "429 (**Too many requests**)"
     When the request has been blocked due to rate limiting.

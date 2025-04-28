@@ -13,4 +13,4 @@ This still requires the user to have **made his edits public**(1).
 1. User ID ```uid``` for users who have previously made anonymous changes will not be visible.
 
 !!! note "OpenStreetMap Foundation Board recommendation."
-    In this accordance, **anonymous edits are no longer allowed**. 
+    In this accordance (nie rozumiem tego zwrotu. Przeważnie accordance używa się w zwrotach "in accordance with", ale może to jest jakieś specjalistyczne wyrażenia), **anonymous edits are no longer allowed**. 
