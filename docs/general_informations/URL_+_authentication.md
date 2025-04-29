@@ -46,7 +46,7 @@ If you need to compare it to older ones, check [here](../endpoints_(API_calls)/g
 HTTP status codes (400-500).
 
 === "400 (**Bad request**)"
-    If you are accessing the CGImap version of the API, this error code will be returned when OAuth fails with a ==Bad OAuth request==.
+    If you are accessing the CGImap version of the API, this error code will be returned when OAuth fails with a Bad OAuth request.
 === "401 (**Unauthorized**)"
     Login was unsuccessful.
 === "403 (**Forbidden**)"

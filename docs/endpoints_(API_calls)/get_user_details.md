@@ -4,7 +4,7 @@
 
 </div>
 
-Returns an XML document with the home location and the `display_name` of the **logged-in user**.
+Returns an XML document with the home location and the `display_name` of the **logged-in** user.
 
 ### Request
 

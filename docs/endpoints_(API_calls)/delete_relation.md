@@ -38,11 +38,11 @@ In `request body` the ==relation ID== and ==version== are also required (check t
 === "400 (**Bad Request**)"
     When there are errors parsing the XML (a text message explaining the error is returned). When a changeset ID is missing, when a node is outside the world. When the version of the provided element does not match the current database version of the element.
 === "404 (**Not Found**)"
-    When no element with the given ID could be found (*Requested resource could not be found*).
+    When no element with the given ID could be found (example: *Requested resource could not be found*).
 === "409 (**Conflict**)"
     If the changeset in question has already been closed either by the user, or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also, if the user trying to update the changeset is not the same as the one that created it.
 === "410 (**Gone**)"
-    If the element has been deleted (*Requested content is permanently deleted from the server*).
+    If the element has been deleted (example: *Requested content is permanently deleted from the server*).
 === "412 (**Precondition Failed**)"
     When a relation is still member of another relation.
 === "429 (**Too Many Requests**)"
