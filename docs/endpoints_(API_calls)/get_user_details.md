@@ -49,4 +49,4 @@ Returns an XML document with the home location and the `display_name` of the **l
 ### Error codes
 
 === "404 (**Not Found**)"
-    Requested resource could not be found (*Object not found*).
+    Requested resource could not be found (example: *Object not found*).

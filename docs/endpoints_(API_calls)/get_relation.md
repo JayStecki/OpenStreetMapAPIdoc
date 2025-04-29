@@ -32,7 +32,7 @@ Returns the XML representation of the relation element. Relation ==ID== is requi
 
 ### Error codes
 
-=== "404 (**Not found**)"
+=== "404 (**Not Found**)"
     Requested resource could not be found.
 === "410 (**Gone**)"
-    Requested content is permanently **deleted** from the server.
+    Requested content is permanently deleted from the server.

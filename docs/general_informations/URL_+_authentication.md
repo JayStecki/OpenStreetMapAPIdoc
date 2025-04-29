@@ -1,23 +1,23 @@
-The API (live-api) is currently accessible using the following URL:
+The API (live-api) is currently accessible using the following:
+
+[See the live-api :material-map-outline:](https://api.openstreetmap.org){ target=_blank .md-button }
 
 ```
 https://api.openstreetmap.org
 ```
 
-[See the live-api :material-map-outline:](https://api.openstreetmap.org){ target=_blank .md-button }
-
-When testing your software against the API you should consider using(1):
+When testing(1) your software against the API you should consider using:
 { .annotate }
 
 1. Your account for the live service is not in the same database, so you probably need a new username and password for the test service.
+
+[See the dev-api :fontawesome-solid-map:](https://master.apis.dev.openstreetmap.org/){ target=_blank .md-button .md-button--primary }
 
 ```
 https://master.apis.dev.openstreetmap.org
 ```
 
-[See the dev-api :fontawesome-solid-map:](https://master.apis.dev.openstreetmap.org/){ target=_blank .md-button .md-button--primary }
-
-All of the calls to the API which update, create or delete data have to be made by an **authenticated and authorized** user(1).
+All of the calls to the API which update, create or delete data have to be made by an **authenticated** and **authorized** user(1).
 { .annotate }
 
 1. Authentication works by using OAuth 2.0.
@@ -39,7 +39,7 @@ The required OAuth scopes to be able to use the full API v0.6 are:
 - ```consume_messages```
 - ```send_messages```
 
-If you need compare it to older ones, check [here in additional](../../endpoints_(API_calls)/get_api_permissions#additional).
+If you need to compare it to older ones, check [here](../endpoints_(API_calls)/get_api_permissions.md#additional) (in the Additional section).
 
 ## Error codes
 

@@ -4,18 +4,18 @@
 
 </div>
 
-The following command returns:
-
-- all nodes that are inside a given ==bounding box== and any relations that reference them.
-- All ways that reference at least one node that is inside a given ==bounding box==, any relations that reference them (the ways), and any nodes outside the ==bounding box== that the ways may reference.
-- All relations that reference one of the nodes, ways or relations included due to the above rule (does not apply recursively).
-
 GET/api/0.6/map?==bbox=left,bottom,right,top== - where:
 
 - **Left** is the longitude of the left (westernmost) side of the ==bounding box==.
 - **Bottom** is the latitude of the bottom (southernmost) side of the ==bounding box==.
 - **Right** is the longitude of the right (easternmost) side of the ==bounding box==.
 - **Top** is the latitude of the top (northernmost) side of the ==bounding box==.
+
+The following command returns:
+
+- All nodes that are inside a given bounding box and any relations that reference them.
+- All ways that reference at least one node that is inside a given bounding box, any relations that reference them (the ways), and any nodes outside the bounding box that the ways may reference.
+- All relations that reference one of the nodes, ways or relations included due to the above rule (does not apply recursively).
 
 !!! note "Bounding box `bbox` explanation"
     While this command returns those relations that reference the aforementioned nodes and ways, the reverse is not true: it does not (necessarily) return all of the nodes and ways that are referenced by these relations (this prevents unreasonably-large result sets).
@@ -32,7 +32,11 @@ GET/api/0.6/map?==bbox=left,bottom,right,top== - where:
 
 ![](https://img.shields.io/badge/GET-green)
 
-``` title="Example data"
+```
+/api/0.6/map?bbox=
+```
+
+``` title="Example data request"
 /api/0.6/map?bbox=100,50,100,50
 ```
 
@@ -58,9 +62,7 @@ GET/api/0.6/map?==bbox=left,bottom,right,top== - where:
 
 ## Error codes
 
-=== "400 (**Bad request**)"
-    The ==latitudes== must be between -90 and 90, ==longitudes== between -180 and 180 and the **minima must be less than the maxima**.
-    
-    The maximum ==bbox== size is 0.250000, and your request was too large. Either **request a smaller area**, or use planet.osm
-=== "509 (**Bandwidth limit exceeded**)"
-    Error: You have **downloaded too much** data. Please try again later.
+=== "400 (**Bad Request**)"
+    The latitudes must be between -90 and 90, longitudes between -180 and 180 and the minima must be less than the maxima (example: *The maximum bbox size is 0.250000, and your request was too large. Either request a smaller area, or use planet.osm*).
+=== "509 (**Bandwidth Limit Exceeded**)"
+    Error: You have downloaded too much data. Please try again later.

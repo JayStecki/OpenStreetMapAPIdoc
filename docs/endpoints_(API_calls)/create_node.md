@@ -7,9 +7,9 @@
 Creates a new node element.
 
 !!! warning "To create new node, **first** you must operate inside [open changeset](open_changeset.md)."
-    Insert the ongoing ==changeset ID== to the `request body`. After complete various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the ==longitude== and ==latitude== is also required (check the example).
+In `request body` the ==longitude== and ==latitude== are also required (check the example).
 
 ### Request
 
@@ -38,11 +38,11 @@ In `request body` the ==longitude== and ==latitude== is also required (check the
 
 ### Error codes
 
-=== "400 (**Bad request**)"
-    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing**, when a node is outside the world.
-=== "405 (**Method not allowed**)"
-    If the request is **not a POST** request.
+=== "400 (**Bad Request**)"
+    When there are errors parsing the XML (a text message explaining the error is returned). When a changeset ID is missing, when a node is outside the world.
+=== "405 (**Method Not Allowed**)"
+    If the request is not a (HTTP) **POST** request.
 === "409 (**Conflict**)"
-    If the changeset in question has already been closed - either by the user itself, or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also if the user trying to update the changeset is not the same, as the one that created it.
-=== "429 (**Too many requests**)"
+    If the changeset in question has already been closed - either by the user itself, or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also, if the user trying to update the changeset is not the same, as the one that created it.
+=== "429 (**Too Many Requests**)"
     When the request has been blocked due to rate limiting.

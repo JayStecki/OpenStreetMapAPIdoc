@@ -1,16 +1,16 @@
-There are API calls to [CRUD](#operations-on-osm-elements) the three basic **elements**, that make up the **map data** for OpenStreetMap. They each return or expect the data for the elements in a **XML format**.
+There are API calls to [CRUD](#operations-on-osm-elements) the three basic elements, that build the map data for OpenStreetMap. They each return or expect the data for the elements in an **XML format**.
 
 ## Elements description
 
-Elements are the basic components of OpenStreetMap's conceptual data model of the physical world. There are **three types** of elements:
+Elements are the basic components of OpenStreetMap's conceptual data model of the physical world. There are three types of elements:
 
-- **nodes** (defining points in space).
+- **nodes** (defining points in space),
     ``` xml title="node_example.xml" linenums="1"
     <node id="25496583" lat="51.5173639" lon="-0.140043" version="1" changeset="203496" user="80n" uid="1238" visible="true" timestamp="2007-01-28T11:40:26Z">
     <tag k="highway" v="traffic_signals"/>
     </node>
     ```
-- **ways** (defining linear features and area boundaries as ordered list of nodes).
+- **ways** (defining linear features and area boundaries as ordered list of nodes),
     ``` xml title="way_example.xml" linenums="1"
     <way id="5090250" visible="true" timestamp="2009-01-19T19:07:25Z" version="8" changeset="816806" user="Blumpsy" uid="64226">
     <nd ref="822403"/>
@@ -64,14 +64,14 @@ Elements are the basic components of OpenStreetMap's conceptual data model of th
 Within the OSM database, we store these attributes for nodes, ways and relations. Your application may not need to make use of all of them, and some third-party extracts produced from OSM data may not reproduce them all.
 
 | Name | Value | Description |
-| :---: | --- | --- |
+| :---: | :---: | --- |
 | ```id``` | integer (64-bit) | Identifying the element. Positive (>0) and negative (<0) values with their [inside logic](#id-positive-and-negative-values-logic). |
-| ```user``` | (character) string | The display name of the user who last modified the object ([**informative only and may be empty**](#user-name-changing-case)). |
-| ```uid``` | integer | The numeric identifier of the user who last modified the object. **User identifiers never change.** |
-| ```timestamp``` | [^^W3C standard date and time formats^^](https://www.w3.org/TR/NOTE-datetime){:target="_blank"} | Time of the last modification - without fractional seconds (e.g. ==2016-12-31T23:59:59Z==). |
-| ```visible``` | ==true== or ==false== | Whether the object is deleted or not in the database (if ==visible=false== then the object should only be returned by history calls). |
+| ```user``` | (character) string | The display name of the user who last modified the object ([informative only and may be empty](#user-name-changing-case)). |
+| ```uid``` | integer | The numeric identifier of the user who last modified the object. User identifiers never change. |
+| ```timestamp``` | [^^W3C standard date and time formats^^](https://www.w3.org/TR/NOTE-datetime){:target="_blank"} | Time of the last modification - without fractional seconds (example: *2016-12-31T23:59:59Z*). |
+| ```visible``` | true or false | Whether the object is deleted or not in the database (if visible=false then the object should only be returned by history calls). |
 | ```version``` | integer | The edit version of the object specified by the [server logic](#version-manage-logic). |
-| ```changeset``` | integer | The changeset number in which the object was created or updated (supporting 64-bit is recommended in applications for compatibility with long term evolution of the OSM database, but applications that only query data without updating them may ignore this informative attribute). |
+| ```changeset``` | integer | The changeset number in which the object was created or updated (supporting 64-bit is recommended in applications for compatibility with long term evolution of the OSM database; applications that only query data without updating them may ignore this informative attribute). |
 
 #### ID positive and negative values logic
 
@@ -91,11 +91,11 @@ Within the OSM database, we store these attributes for nodes, ways and relations
 ??? info "Object's lifecycle."
     Newly created objects start at version 1 and the value is incremented by the server when a client uploads a new version of the object. The server will reject a new version of an object if the version sent by the client does not match the current version of the object in the database.
 
-## XML Caution and Notes on Nomenclature
+## XML caution and notes on nomenclature
 
-The major tools in the OSM universe use an XML format following a XML schema definition that was first used by the API only. The set of Elements in OSM XML that are referred to as elements in documentation are a subset of the actual XML elements found in the data. i.e. the **term Element in XML** and the **term Element in OSM XML** are not synonymous.
+The major tools in the OSM universe use an XML format following a XML schema definition that was first used by the API only. The set of elements in OSM XML that are referred to as elements in documentation are a subset of the actual XML elements found in the data, that is the **term Element in XML** and the **term Element in OSM XML** are not synonymous.
 
-!!! warning "Component integrity"
-    Elements in OSM data are defined as one of node, way, and relation. XML elements tag, nd, and member are not referred to as elements in OSM XML but they are indeed XML elements.
+!!! warning "Component integrity."
+    Elements in OSM data are defined as one of node, way, and relation. XML elements `tag`, `nd`, and `member` are not referred to as elements in OSM XML but they are indeed XML elements.
 
-Users of XML tools should also be aware that nodes, ways and relations share the same object id space. OSM Objects must always be referred to both with their object ids and their respective object type (node, way, relation).
+Users of XML tools should also be aware that nodes, ways and relations share the same object id space. OSM objects must always be referred to both with their object `ids` and their respective object type (node, way, relation).

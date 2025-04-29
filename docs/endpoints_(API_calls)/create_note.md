@@ -4,9 +4,9 @@
 
 </div>
 
-Creates a new note for a specific geographic location (==longitude== and ==latitude== required) - which allows administrators/users to verify map data.
+Creates a new note for a specific geographic location (==longitude== and ==latitude== are required), which allows administrators/users to verify map data (comment in ==text==. Check the example).
 
-!!! note "If the request is made as an authenticated user, the note is associated to that user account."
+!!! note "If the request is made as an authenticated user, the note is associated with that user's account."
     If the OAuth access token used does not have the `allow_write_notes` permission, it is created as an anonymous note instead.
 
 ### Request
@@ -17,7 +17,7 @@ Creates a new note for a specific geographic location (==longitude== and ==latit
 /api/0.6/notes
 ```
 
-```
+``` title="newNoteForPointBody_example"
 /api/0.6/notes?lat=50.8038794&lon=16.2646154&text=NazwaTerenuTo:OgródkidziałkoweMagnolia
 ```
 
@@ -25,7 +25,7 @@ Creates a new note for a specific geographic location (==longitude== and ==latit
 
 ![](https://img.shields.io/badge/Response-200%20OK-brightgreen)
 
-``` xml title="relationID_example.xml" linenums="1" hl_lines="3-17"
+``` xml title="newNoteForPointAdded_example.xml" linenums="1" hl_lines="3-17"
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
     <note lon="16.2646154" lat="50.8038794">
@@ -52,7 +52,7 @@ Creates a new note for a specific geographic location (==longitude== and ==latit
 
 ### Error codes
 
-=== "400 (**Bad request**)"
+=== "400 (**Bad Request**)"
     If the text field was not present.
-=== "404 (**Not found**)"
-    This applies, if the request is not a (HTTP) POST request.
+=== "404 (**Not Found**)"
+    This applies, if the request is not a (HTTP) **POST** request.

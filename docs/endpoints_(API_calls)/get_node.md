@@ -30,7 +30,7 @@ Returns the XML representation of the node element. Node ==ID== is required.
 
 ### Error codes
 
-=== "404 (**Not found**)"
+=== "404 (**Not Found**)"
     When no element with the given ID could be found (*Requested resource could not be found*).
 === "410 (**Gone**)"
-    If the element has been **deleted** (*Requested content is permanently deleted from the server*).
+    If the element has been deleted (*Requested content is permanently deleted from the server*).

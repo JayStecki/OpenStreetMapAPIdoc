@@ -32,7 +32,7 @@ Returns the XML representation of the way element. Way ==ID== is required.
 
 ### Error codes
 
-=== "404 (**Not found**)"
-    When no element with the given ID could be found (*Requested resource could not be found*).
+=== "404 (**Not Found**)"
+    When no element with the given ID could be found (example: *Requested resource could not be found*).
 === "410 (**Gone**)"
-    If the element has been **deleted** (*Requested content is permanently deleted from the server*).
+    If the element has been deleted (example: *Requested content is permanently deleted from the server*).

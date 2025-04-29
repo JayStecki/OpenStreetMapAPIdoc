@@ -7,7 +7,7 @@
 Method for getting a list of changesets, that supports filtering by different criteria(1). 
 { .annotate }
 
-1. Only changesets by **public users** are returned (returns at most 100 changesets).
+1. Only changesets by public users are returned (returns at most 100 changesets).
 
 ??? info "Where multiple queries are given the result will be those which match all of the requirements."  
     The contents of the returned document are the changesets and their tags. To get the full set of changes associated with a changeset, use the download method on each changeset ID individually. Modification and extension of the basic queries above may be required to support rollback and other uses we find for changesets.
@@ -15,14 +15,14 @@ Method for getting a list of changesets, that supports filtering by different cr
 !!! note "Parameters to specify the criteria."
     | Parameter | Syntax | Description |
     | :---: | :---: | :---: |
-    | `bbox` | min_lon,min_lat,max_lon,max_lat | find changesets within the given bounding box |
-    | `user` or `display_name` | #uid / #name | find changesets by the user with the given user id or display name (**providing both is an error**) |
-    | `time` | T1 / T1,T2 | find changesets closed after T1 / Find changesets that were closed after T1 and created before T2 |
-    | `from` | T1 (& to=T2) | Find changesets created at or after T1, and (optionally) before T2. to requires from, but not vice-versa. If to is provided alone, it has no effect. |
-    | `open` or `close` | true | Only finds changesets that are still open but excludes changesets that are closed or have reached the element limit for a changeset. Or only finds changesets that are closed or have reached the element limit |
+    | `bbox` | min_lon,min_lat,max_lon,max_lat | Finds changesets within the given bounding box |
+    | `user` or `display_name` | #uid / #name | Finds changesets by the user with the given user id or display name (**providing both is an error**) |
+    | `time` | T1 / T1,T2 | Finds changesets closed after T1 / finds changesets that were closed after T1 and created before T2 |
+    | `from` | T1 (& to=T2) | Finds changesets created at or after T1, and (optionally) before T2 to requires **from**, but not vice-versa. If **to** is provided alone, it has no effect |
+    | `open` or `close` | true | Only finds changesets that are still open but excludes changesets that are closed **or** have reached the element limit for a changeset. Alternatively only finds changesets that are closed **or** have reached the element limit |
     | `changesets` | #cid | Finds changesets with the specified ids |
-    | `order` | newest / oldest | if newest (default), sort newest changesets first. If oldest, reverse order |
-    | `limit` | number (integer) | Specifies the maximum number of changesets returned. A number between 1 and the maximum limit value (currently 100). If omitted, the default limit value is used (currently 100). The actual maximum and default limit values can be found with a [capabilities request](get_api_capabilities.md). |
+    | `order` | newest / oldest | If newest (default), sort newest changesets first. If oldest, reverse order |
+    | `limit` | number (integer) | Specifies the maximum number of changesets returned. A number between 1 and the maximum limit value (currently 100). If omitted, the default limit value is used (currently 100). The actual maximum and default limit values can be found with a [capabilities request](get_api_capabilities.md) |
 
 ### Request
 
@@ -33,7 +33,7 @@ Method for getting a list of changesets, that supports filtering by different cr
 ```
 
 
-```
+``` title="Example changesets request"
 /api/0.6/changesets?bbox=14.182,49.969,19.011,51.839&user=22098&closed=true&order=oldest&limit=10
 ```
 
@@ -61,7 +61,7 @@ Method for getting a list of changesets, that supports filtering by different cr
 
 ### Error codes
 
-=== "400 (**Bad request**)"
-    On misformed parameters. A text message explaining the error is returned. In particular, trying to provide both the UID and display name as user query parameters will result in this error.
+=== "400 (**Bad Request**)"
+    On misformed parameters. A text message explaining the error is returned. In particular, trying to provide both the `uid` and `display_name` as user query parameters will result in this error.
 === "404 (**Not Found**)"
     When no user with the given `uid` or `display_name` could be found.

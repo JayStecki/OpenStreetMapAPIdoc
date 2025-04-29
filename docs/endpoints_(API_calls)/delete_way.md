@@ -4,10 +4,10 @@
 
 </div>
 
-Deletes a existing way element.
+Deletes an existing way element.
 
 !!! warning "To delete existing way, **first** you must operate inside [open changeset](open_changeset.md)."
-    Insert the ongoing ==changeset ID== to the `request body`. After complete various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
 In `request body` the ==way ID== and ==version== is also required (check the example).
 
@@ -35,15 +35,15 @@ In `request body` the ==way ID== and ==version== is also required (check the exa
 
 ### Error codes
 
-=== "400 (**Bad request**)"
-    When there are errors parsing the XML (a text message explaining the error is returned). When a **changeset ID is missing**, when a node is outside the world. When the **version** of the provided element does not match the current database version of the element.
-=== "404 (**Not found**)"
+=== "400 (**Bad Request**)"
+    When there are errors parsing the XML (a text message explaining the error is returned). When a changeset ID is missing, when a node is outside the world. When the version of the provided element does not match the current database version of the element.
+=== "404 (**Not Found**)"
     When no element with the given ID could be found (*Requested resource could not be found*).
 === "409 (**Conflict**)"
-    If the changeset in question has already been closed - either by the user itself, or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also if the user trying to update the changeset is not the same, as the one that created it.
+    If the changeset in question has already been closed either by the user, or as a result of the auto-closing feature (example: *The changeset 412384 was closed at 2025-04-23 11:51:26 UTC*). Also, if the user trying to update the changeset is not the same as the one that created it.
 === "410 (**Gone**)"
-    If the element has been **deleted** (*Requested content is permanently deleted from the server*).
-=== "412 (**Precondition failed**)"
+    If the element has been deleted (*Requested content is permanently deleted from the server*).
+=== "412 (**Precondition Failed**)"
     When a way is still member of a relation.
-=== "429 (**Too many requests**)"
+=== "429 (**Too Many Requests**)"
     When the request has been blocked due to rate limiting.
