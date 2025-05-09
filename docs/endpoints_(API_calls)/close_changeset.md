@@ -4,8 +4,10 @@
 
 </div>
 
+Closes the ongoing changeset.
+
 !!! note "Required after creating/updating/deleting every element (node, way, relation)."
-    You should manually [close the changeset](close_changeset.md) after the process, otherwise it will [close automatically](../general_informations/changesets.md#changesets-attributes).
+    You should manually close the ongoing changeset after the process, otherwise it will [close automatically](../general_information/changesets.md#changesets-attributes).
 
 ### Request
 

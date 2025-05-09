@@ -15,8 +15,8 @@
 - [x]  April 06 - 20% draft.
 - [x]  April 27 - 100% draft (live checking).
 - [x]  May 05 - project reviewed (peer reviewers).
-- [ ]  May 10 - project fully reviewed (supervisor).
-- [ ]  May 17 - project published with changes.
+- [ ]  May 17 - project fully reviewed (supervisor).
+- [ ]  May 20 - project published with changes.
 - [ ]  May 24 - final exam, graduation.
 > Bottlenecks identified (2), presentation preparedness time secured.
 
@@ -29,7 +29,7 @@ Navigation in Unified Modeling Language (UML):
 1. Doc is legal (complies with the UE/PL law).
 2. Doc is transparent (reveal sources and human-machine interaction).[^1](#footnotes)
 3. Doc is standardized (ISO/IEC CD 18019 / ISO standard 2001).
-4. Doc is using Style Guide (optional).
+4. ~~Doc is using Style Guide (optional).~~
 5. Doc is *user friendly* (users: developers).
 6. Doc is *machine friendly* (CDT-writing-forMT / UE guideline 2021).
 7. Doc is using STE (ASD-STE100 / 2021).
@@ -124,7 +124,7 @@ static webpage generator:
   - custom.js (dynamic content in JS).
 
 #### Scenario
-[devScenario](PROJECT_devScenario.md) is dedicated to get the results.
+[devScenario](PROJECT_devScenario.md) is intended to get the results.
 
 [**Back to concept**](#concept)
 ### Tasks
@@ -147,8 +147,8 @@ static webpage generator:
   - [x] adjustments in meantime of review,
 - [x] May 05 - project reviewed (peer reviewers).
   - [x] fix bugs, ~~merge changes~~, apply changes,
-  - [ ] supervisor's review between May 05-10.
-- [ ] May 17 - project published with changes.
+  - [ ] supervisor's review between May 10-17.
+- [ ] May 20 - project published with changes.
   - [ ] create presentation.
 - [ ] May 24 - final exam, graduation.
 ### Reference

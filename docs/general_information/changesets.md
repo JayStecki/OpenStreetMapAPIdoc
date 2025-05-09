@@ -1,5 +1,15 @@
 Every [CRUD](elements.md#operations-on-osm-elements) modification of one or more of the [elements](elements.md) has to reference an **open changeset**. Changeset process (from open to close) works like a 'mini-commit' mechanism with every element's modification inside.
 
+``` mermaid
+stateDiagram-v2
+  state "Open changeset (manually)" as OpenChangeset
+  state "CRUD operations on elements" as CRUDElements
+  state "Close changeset (manually or automatically)" as CloseChangeset
+
+  OpenChangeset --> CRUDElements
+  CRUDElements --> CloseChangeset
+```
+
 ## Changesets attributes
 
 - A changeset may contain [tags](tags.md) just like the other elements.

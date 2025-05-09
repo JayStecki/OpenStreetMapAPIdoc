@@ -4,7 +4,7 @@
 
 </div>
 
-Returns the XML representation of the way element. Way ==ID== is required.
+Returns the XML representation of the [way element](../general_information/elements.md#elements-description). Way ==ID== is required.
 
 ### Request
 

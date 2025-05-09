@@ -4,10 +4,10 @@
 
 </div>
 
-Updates data for a existing relation element.
+Updates data for a existing [relation element](../general_information/elements.md#elements-description).
 
 !!! warning "To update existing relation, **first** you must operate inside [open changeset](open_changeset.md)."
-     Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+     Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
 In `request body` the ==relation ID==, ==version==, ==role== and tag ==(k="type" v=" ")== is also required (check the example).
 

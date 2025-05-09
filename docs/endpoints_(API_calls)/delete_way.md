@@ -4,10 +4,10 @@
 
 </div>
 
-Deletes an existing way element.
+Deletes an existing [way element](../general_information/elements.md#elements-description).
 
 !!! warning "To delete existing way, **first** you must operate inside [open changeset](open_changeset.md)."
-    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_informations/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
 In `request body` the ==way ID== and ==version== is also required (check the example).
 

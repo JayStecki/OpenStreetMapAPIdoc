@@ -4,7 +4,7 @@
 
 </div>
 
-Returns the XML representation of the node element. Node ==ID== is required.
+Returns the XML representation of the [node element](../general_information/elements.md#elements-description). Node ==ID== is required.
 
 ### Request
 

@@ -33,16 +33,16 @@ nav:
   - Welcome to OSM API doc: index.md
   - When NOT to use the API: when_NOT_to_use_the_API.md
   - Overview: overview.md
-  - General informations:
-    - Info: general_informations/info.md
-    - URL + authentification: general_informations/URL_+_authentication.md
-    - Elements: general_informations/elements.md
-    - Changesets: general_informations/changesets.md
-    - Tags: general_informations/tags.md
-    - Maximum string lenghts: general_informations/maximum_string_lenghts.md
-    - Reliably identifying users: general_informations/reliably_identifying_users.md
-    - Version num and opti lock: general_informations/version_numbers_and_optimistic_locking.md
-    - Internal errors with response: general_informations/internal_errors_while_generating_a_response.md
+  - General information:
+    - Info: general_information/info.md
+    - URL + authentification: general_information/URL_+_authentication.md
+    - Elements: general_information/elements.md
+    - Changesets: general_information/changesets.md
+    - Tags: general_information/tags.md
+    - Maximum string lenghts: general_information/maximum_string_lenghts.md
+    - Reliably identifying users: general_information/reliably_identifying_users.md
+    - Version num and opti lock: general_information/version_numbers_and_optimistic_locking.md
+    - Internal errors with response: general_information/internal_errors_while_generating_a_response.md
   - Endpoints (API calls):
     - Miscellaneous:
       - Get API versions: endpoints_(API_calls)/get_api_versions.md
@@ -75,6 +75,7 @@ nav:
     - Methods for user data:
       - Get user details: endpoints_(API_calls)/get_user_details.md
   - Semantic versioning: semantic_versioning.md
+  - Using AI in documentation: using_AI_in_documentation.md
 
 markdown_extensions:
   - admonition
@@ -91,7 +92,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.mark
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tilde

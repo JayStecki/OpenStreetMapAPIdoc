@@ -4,7 +4,7 @@
 
 </div>
 
-Returns the XML representation of the relation element. Relation ==ID== is required.
+Returns the XML representation of the [relation element](../general_information/elements.md#elements-description). Relation ==ID== is required.
 
 ### Request
 

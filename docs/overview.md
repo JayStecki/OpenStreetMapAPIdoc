@@ -1,12 +1,13 @@
-!!! info "Target group"
+!!! note "Target group"
     This documentation is intended for **developers** who wish to work with OpenStreetMap API.
 ## Documentation
 The documentation is organized as follows:
 
-- When NOT to use the API
-- General informations
-- Endopoints (API calls)
-- Semantic versioning
+- When NOT to use the API.
+- General information.
+- Endopoints (API calls).
+- Semantic versioning.
+- Using AI in documentation.
 
 ## Support
 If you have any questions or need further information, please contact the [^^OSM admins and community^^](https://wiki.openstreetmap.org/wiki/Contact_channels){:target="_blank"} (*via* forum,  mail, various chats, social networks, webpage, etc.).
