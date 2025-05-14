@@ -4,5 +4,5 @@ The documentation was created in a controlled cooperation between a human (NI) a
 
 - analysis of the documentation scope (indicating 18 basic endpoints),
 - going through the OAuth 2.0 authorization and authentication process in [^^Postman^^](https://www.postman.com/){:target="_blank"} (including generating tokens),
-- preparing a code-snippet with the given parameters (body inserts) for requests in Postman,
-- making a code-snippet with the given data for the [diagram](./general_information/changesets.md) used.
+- preparing an URI requests with the given parameters for API calls in Postman,
+- making a code snippet with the given data for the [diagram](./general_information/changesets.md) used.

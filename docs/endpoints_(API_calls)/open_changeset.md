@@ -1,12 +1,12 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
-Opens a new changeset.
+Opens a new [changeset](../general_information/changesets.md). In response you will receive changeset ID.
 
-!!! note "Required before creating/updating/deleting every element (node, way, relation)."
+!!! note "Required before creating/updating/deleting every element (node, way, relation)"
     You should manually [close the changeset](close_changeset.md) after the process, otherwise it will [close automatically](../general_information/changesets.md#changesets-attributes).
 
 ### Request
@@ -37,6 +37,6 @@ Opens a new changeset.
 ### Error codes
 
 === "400 (**Bad Request**)"
-    When there are errors parsing the XML.
+    Errors occured when parsing the XML.
 === "405 (**Method Not Allowed**)"
     If the request is not a (HTTP) **PUT** request.

@@ -1,1 +1,1 @@
-The current rails and [CGImap](info.md) implementation of the API limits the length of key-value strings for elements, changeset and user preference tags, and relation member roles, to a **maximum** of **255** UTF-8 unicode **characters**.
+The current rails and [CGImap](info.md) implementation of the API limits the length of key-value strings for elements, changeset and user preference tags, and relation member roles, to a maximum of 255 UTF-8 unicode characters.

@@ -1,4 +1,4 @@
-Every [CRUD](elements.md#operations-on-osm-elements) modification of one or more of the [elements](elements.md) has to reference an **open changeset**. Changeset process (from open to close) works like a 'mini-commit' mechanism with every element's modification inside.
+Every [CRUD](elements.md#operations-on-the-osm-elements) modification of one or more of the [elements](elements.md) has to reference an **open changeset**. Changeset process (from open to close) works like a 'mini-commit' mechanism with every element's modification inside.
 
 ``` mermaid
 stateDiagram-v2
@@ -13,7 +13,7 @@ stateDiagram-v2
 ## Changesets attributes
 
 - A changeset may contain [tags](tags.md) just like the other elements.
-- A new changeset can be opened at any time and a changeset may be referenced from multiple API calls. Also new changeset:
+- A new changeset can be opened at any time and may be used for multiple API calls. Newly open changeset characterized:
       - can be closed manually,
       - mechanism is implemented to **automatically close** changesets in case:
           <div class="annotate" markdown>
@@ -24,19 +24,19 @@ stateDiagram-v2
             1. Some older changesets may contain slightly more than 10k (or previously 50k) changes due to some glitches in the API.
     - Changesets are specifically not atomic – elements added within a changeset will be visible to other users before the changeset is closed.
     - Changesets facilitate the implementation of rollbacks.
-    - Server stores a bounding box for each changeset and allows users to query changesets in an area:
-          - API computes the bounding box (rules beneath) associated with a changeset.
+    - Server stores a [bounding box](bounding_box.md) for each changeset and allows users to query changesets in an area:
+          - API computes the bounding box associated with a changeset (rules beneath).
     - It is not possible to delete changesets at the moment, even if they don't contain any changes.
 
 ### Bounding box computation
 
-??? info "Bounding box for [nodes](elements.md#elements-description)."
+??? info "Bounding box computation for [nodes](elements.md#elements-description)"
     Any change to a node, including deletion, adds the node's old and new location to the bounding box.
 
-??? info "Bounding box for [ways](elements.md#elements-description)."
+??? info "Bounding box computation for [ways](elements.md#elements-description)"
     Any change to a way, including deletion, adds all of the way's nodes to the bounding box.
 
-??? info "Bounding box for [relations](elements.md#elements-description)."
+??? info "Bounding box computation for [relations](elements.md#elements-description)"
     - Adding or removing nodes or ways from a relation causes them to be added to the changeset bounding box.
     - Adding a relation as a member or changing tag values causes all node and way members to be added to the bounding box.
     - This is similar to how the map call does things and is reasonable on the assumption that adding or removing members doesn't materially change the rest of the relation.

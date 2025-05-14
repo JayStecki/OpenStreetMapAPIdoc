@@ -1,15 +1,15 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
 Deletes an existing [node element](../general_information/elements.md#elements-description).
 
-!!! warning "To delete existing node, **first** you must operate inside [open changeset](open_changeset.md)."
-    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+!!! warning "To delete existing node you must operate inside an [open changeset](open_changeset.md)"
+    Insert the ongoing changeset ID `changeset` to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the ==node ID==, ==version==, ==latitude== and ==longitude== are also required (check the example).
+In `request body` the node ID `id`, node version `version`, latitude `lat` and longitude `lon` are also required (check the example).
 
 ### Request
 

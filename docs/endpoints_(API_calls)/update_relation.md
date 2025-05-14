@@ -1,23 +1,18 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
 Updates data for a existing [relation element](../general_information/elements.md#elements-description).
 
-!!! warning "To update existing relation, **first** you must operate inside [open changeset](open_changeset.md)."
-     Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+!!! warning "To update existing relation you must operate inside an [open changeset](open_changeset.md)"
+     Insert the ongoing changeset ID `changeset` to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the ==relation ID==, ==version==, ==role== and tag ==(k="type" v=" ")== is also required (check the example).
-
-| Body parameters | Inserts options |
-| :---: | :---: |
-| (member) role= | "outer" / "inner" / "forward" / "backward" |
-| (tag) k="type" | v="relation" / v="multipolygon" |
-
-!!! note "A full representation of the element as it should be after the update has to be provided."
+!!! note "A full representation of the element as it should be after the update has to be provided"
     Any tags, way-node refs, and relation members that remain unchanged **must be in the update** as well. A version number must be provided as well, it must match the current version of the element in the database.
+
+In `request body` the relation ID `id`, relation version `version`, member role `role` and tag `k=" " v=" "` are also required (check the example).
 
 ### Request
 
@@ -26,6 +21,11 @@ In `request body` the ==relation ID==, ==version==, ==role== and tag ==(k="type"
 ```
 /api/0.6/relation/{id}
 ```
+
+| Body parameters | Inserts options |
+| :---: | :---: |
+| `<member ... role=" ">` | `"outer"` / `"inner"` / `"forward"` / `"backward"` |
+| `<tag k="type" v=" ">` | `"relation"` / `"multipolygon"` |
 
 ``` xml title="updateRelationBody_example.xml" hl_lines="2-6"
 <osm>

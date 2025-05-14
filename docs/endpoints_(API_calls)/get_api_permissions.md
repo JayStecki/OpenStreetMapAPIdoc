@@ -39,9 +39,9 @@ Returns the permissions granted to the current API connection.
     </permissions>
 </osm>
 ```
-## Additional
+## Additional information
 
-??? info "Currently following permissions corresponding to the older ones."
+??? info "Current permissions corresponding to the older ones"
     | OAuth 2.0 | OAuth 1.0 |
     | :---: | :---: |
     | `allow_read_prefs` | read user preferences |

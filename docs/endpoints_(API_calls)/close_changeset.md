@@ -1,13 +1,13 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
-Closes the ongoing changeset.
+Closes the ongoing [changeset](../general_information/changesets.md).
 
-!!! note "Required after creating/updating/deleting every element (node, way, relation)."
-    You should manually close the ongoing changeset after the process, otherwise it will [close automatically](../general_information/changesets.md#changesets-attributes).
+!!! note "Required after creating/updating/deleting every element (node, way, relation)"
+    You should manually close the [ongoing](open_changeset.md) changeset after the process, otherwise it will [close automatically](../general_information/changesets.md#changesets-attributes).
 
 ### Request
 
@@ -28,7 +28,7 @@ Closes the ongoing changeset.
 ### Error codes
 
 === "404 (**Not Found**)"
-    When no changeset with the given id could be found.
+    No changeset with the given ID could be found.
 === "405 (**Method Not Allowed**)"
     If the request is not a (HTTP) **PUT** request.
 === "409 (**Conflict**)"

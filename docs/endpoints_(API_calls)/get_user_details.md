@@ -1,10 +1,10 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
-Returns an XML document with the home location and the `display_name` of the **logged-in** user.
+Returns an XML document with the ID `id`, name `display_name` and home location `home` of the **logged-in** user.
 
 ### Request
 
@@ -18,7 +18,7 @@ Returns an XML document with the home location and the `display_name` of the **l
 
 ![](https://img.shields.io/badge/Response-200%20OK-brightgreen)
 
-``` xml linenums="1" hl_lines="3"
+``` xml linenums="1" hl_lines="3-14"
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
     <user id="22098" display_name="JayStecki" account_created="2025-04-22T12:01:23Z">

@@ -1,10 +1,10 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
-Returns the XML representation of the [way element](../general_information/elements.md#elements-description). Way ==ID== is required.
+Returns the XML representation of the [way element](../general_information/elements.md#elements-description). Way ID `id` is required.
 
 ### Request
 
@@ -12,6 +12,10 @@ Returns the XML representation of the [way element](../general_information/eleme
 
 ```
 /api/0.6/way/{id}
+```
+
+``` title="Example way request"
+/api/0.6/way/4307240014
 ```
 
 ### Response

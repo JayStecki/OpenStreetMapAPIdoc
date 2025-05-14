@@ -1,27 +1,24 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
-Method for getting a list of changesets, that supports filtering by different criteria(1). 
-{ .annotate }
+A method for getting a list of [changesets](../general_information/changesets.md), that supports filtering by different criteria. Only changesets by public users are returned (returns at most 100 changesets).
 
-1. Only changesets by public users are returned (returns at most 100 changesets).
-
-??? info "Where multiple queries are given the result will be those which match all of the requirements."  
+??? info "For multiple queries, the results will match all of the requirements"  
     The contents of the returned document are the changesets and their tags. To get the full set of changes associated with a changeset, use the download method on each changeset ID individually. Modification and extension of the basic queries above may be required to support rollback and other uses we find for changesets.
 
-!!! note "Parameters to specify the criteria."
+!!! note "Parameters to specify the criteria"
     | Parameter | Syntax | Description |
     | :---: | :---: | :---: |
-    | `bbox` | min_lon,min_lat,max_lon,max_lat | Finds changesets within the given bounding box |
-    | `user` or `display_name` | #uid / #name | Finds changesets by the user with the given user id or display name (**providing both is an error**) |
+    | `bbox` | min_lon,min_lat,max_lon,max_lat | Finds changesets within the given [bounding box](../general_information/bounding_box.md) |
+    | `user` or `display_name` | #uid / #name | Finds changesets by the user with the given user ID or display name (**providing both is an error**) |
     | `time` | T1 / T1,T2 | Finds changesets closed after T1 / finds changesets that were closed after T1 and created before T2 |
     | `from` | T1 (& to=T2) | Finds changesets created at or after T1, and (optionally) before T2 to requires **from**, but not vice-versa. If **to** is provided alone, it has no effect |
     | `open` or `close` | true | Only finds changesets that are still open but excludes changesets that are closed **or** have reached the element limit for a changeset. Alternatively only finds changesets that are closed **or** have reached the element limit |
-    | `changesets` | #cid | Finds changesets with the specified ids |
-    | `order` | newest / oldest | If newest (default), sort newest changesets first. If oldest, reverse order |
+    | `changesets` | #cid | Finds changesets with the specified IDs |
+    | `order` | newest / oldest | If newest (default), sort from newest changesets first. If oldest, reverse order |
     | `limit` | number (integer) | Specifies the maximum number of changesets returned. A number between 1 and the maximum limit value (currently 100). If omitted, the default limit value is used (currently 100). The actual maximum and default limit values can be found with a [capabilities request](get_api_capabilities.md) |
 
 ### Request
@@ -32,6 +29,9 @@ Method for getting a list of changesets, that supports filtering by different cr
 /api/0.6/changesets
 ```
 
+| bbox | user ID | open/close | order | limit |
+| :---: | :---: | :---: | :---: | :---: |
+| 14.182, 49.969, 19.011, 51.839 | 22098 | closed | oldest | 10 |
 
 ``` title="Example changesets request"
 /api/0.6/changesets?bbox=14.182,49.969,19.011,51.839&user=22098&closed=true&order=oldest&limit=10
@@ -62,6 +62,6 @@ Method for getting a list of changesets, that supports filtering by different cr
 ### Error codes
 
 === "400 (**Bad Request**)"
-    On misformed parameters. A text message explaining the error is returned. In particular, trying to provide both the `uid` and `display_name` as user query parameters will result in this error.
+    For misformed parameters, a text message explaining the error is returned. In particular, trying to provide both the `uid` and `display_name` as user query parameters will result in this error.
 === "404 (**Not Found**)"
-    When no user with the given `uid` or `display_name` could be found.
+    No user with the given `uid` or `display_name` could be found.

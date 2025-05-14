@@ -1,4 +1,4 @@
-site_name: OpenStreetMap API doc
+site_name: OpenStreetMap API docs
 theme: 
   name: material
   language: en
@@ -30,19 +30,20 @@ theme:
   plugins:
   - social
 nav:
-  - Welcome to OSM API doc: index.md
-  - When NOT to use the API: when_NOT_to_use_the_API.md
+  - Welcome: index.md
   - Overview: overview.md
+  - When NOT to use the API: when_NOT_to_use_the_API.md
   - General information:
     - Info: general_information/info.md
     - URL + authentification: general_information/URL_+_authentication.md
     - Elements: general_information/elements.md
     - Changesets: general_information/changesets.md
     - Tags: general_information/tags.md
+    - Bounding box: general_information/bounding_box.md
     - Maximum string lenghts: general_information/maximum_string_lenghts.md
     - Reliably identifying users: general_information/reliably_identifying_users.md
-    - Version num and opti lock: general_information/version_numbers_and_optimistic_locking.md
-    - Internal errors with response: general_information/internal_errors_while_generating_a_response.md
+    - Version numbers and optimistic locking: general_information/version_numbers_and_optimistic_locking.md
+    - Internal errors while generating a response: general_information/internal_errors_while_generating_a_response.md
   - Endpoints (API calls):
     - Miscellaneous:
       - Get API versions: endpoints_(API_calls)/get_api_versions.md

@@ -6,10 +6,7 @@ The API (live-api) is currently accessible using the following:
 https://api.openstreetmap.org
 ```
 
-When testing(1) your software against the API you should consider using:
-{ .annotate }
-
-1. Your account for the live service is not in the same database, so you probably need a new username and password for the test service.
+When testing your software against the API you should consider using:
 
 [See the dev-api :fontawesome-solid-map:](https://master.apis.dev.openstreetmap.org/){ target=_blank .md-button .md-button--primary }
 
@@ -17,7 +14,9 @@ When testing(1) your software against the API you should consider using:
 https://master.apis.dev.openstreetmap.org
 ```
 
-All of the calls to the API which update, create or delete data have to be made by an **authenticated** and **authorized** user(1).
+Your account for the live service is not in the same database, so you probably need a new username and password for the test service.
+
+All of the calls to the API which update, create or delete data have to be made by an **authenticated and authorized user**(1).
 { .annotate }
 
 1. Authentication works by using OAuth 2.0.
@@ -39,13 +38,13 @@ The required OAuth scopes to be able to use the full API v0.6 are:
 - ```consume_messages```
 - ```send_messages```
 
-If you need to compare it to older ones, check [here](../endpoints_(API_calls)/get_api_permissions.md#additional) (in the Additional section).
+If you need to compare it to older ones, check [here](../endpoints_(API_calls)/get_api_permissions.md#additional-information).
 
 ## Error codes
 
 HTTP status codes (400-500).
 
-=== "400 (**Bad request**)"
+=== "400 (**Bad Request**)"
     If you are accessing the CGImap version of the API, this error code will be returned when OAuth fails with a Bad OAuth request.
 === "401 (**Unauthorized**)"
     Login was unsuccessful.

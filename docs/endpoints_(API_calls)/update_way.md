@@ -1,17 +1,17 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
 Updates data for a existing [way element](../general_information/elements.md#elements-description).
 
-!!! warning "To update existing way, **first** you must operate inside [open changeset](open_changeset.md)."
-    Insert the ongoing ==changeset ID== to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+!!! warning "To update existing way you must operate inside an [open changeset](open_changeset.md)"
+    Insert the ongoing changeset ID `changeset` to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the ==way ID==, node's IDs (==nd ref==), ==tags== and ==version== are also required (check the example).
+In `request body` the way ID `id`, way version `version`, node's IDs `nd ref` and way tags `tags` are also required (check the example).
 
-!!! note "A full representation of the element as it should be after the update has to be provided."
+!!! note "A full representation of the element as it should be after the update has to be provided"
     Any tags, way-node refs, and relation members that remain unchanged **must be in the update** as well. Also, a version number must be provided as well, it must match the current version of the element in the database.
 
 ### Request

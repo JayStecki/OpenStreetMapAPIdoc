@@ -8,7 +8,7 @@
 
 ## Usability task
 
-> From approximetly 40 endpoints at least 1/3 (min. 13) must be selected and used to work with elements[^1](#footnotes), changesets[^2](#footnotes) and tags[^3](#footnotes). Use only XML request and response format for choosed endpoints (to keep consistent ignore JSON, because all of API call includes XML and only part of them XML + JSON).
+> From approximetly 60 endpoints at least 1/3 (min. 13) must be selected and used to work with elements[^1](#footnotes), changesets[^2](#footnotes) and tags[^3](#footnotes). Use only XML request and response format for choosed endpoints (to keep consistent ignore JSON, because all of API call includes XML and only part of them XML + JSON).
 
 ---
 

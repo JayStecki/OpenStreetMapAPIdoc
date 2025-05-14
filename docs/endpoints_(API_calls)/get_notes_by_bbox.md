@@ -1,23 +1,23 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
-Returns the existing notes in the specified [bounding box](get_api_map.md). The notes will be ordered by the date of their last change; the most recent one will be first. The list of notes can be returned in several different forms (for example as executable JavaScript, XML, RSS, json and GPX), depending on the file extension(1). The comment properties (uid, user, user_url) will be omitted if the comment was anonymous.
+Returns the existing notes in the specified [bounding box](../general_information/bounding_box.md). The notes will be ordered by the date of their last change – the most recent one will be first. The list of notes can be returned in several different forms (for example as executable JavaScript, XML, RSS, JSON and GPX), depending on the file extension(1). The comment properties (`uid`, `user`, `user_url`) will be omitted if the comment was anonymous.
 { .annotate }
 
 1. You can specify the format you want the results returned as by specifying a file extension.
 
-??? info "JOSM, Vespucci and [^^Planet OSM^^](https://planet.openstreetmap.org/notes/){:target="_blank"} output differences."
-    XML format returned by the API is different from the, equally undocumented format used for "osn" format files.
+??? info "JOSM, Vespucci and [^^Planet OSM^^](https://planet.openstreetmap.org/notes/){:target="_blank"} output differences"
+    The XML format returned by the API is different from the, equally undocumented, format used for OSN format files, available from planet.openstreetmap.org, and as output from JOSM and Vespucci.
 
-!!! note "Parameters need to call."
+!!! note "Parameters needs to call"
     | Parameter | Description | Default value | Allowed values |
     | :---: | --- | :---: | --- |
-    | `bbox` | coordinates bounding the area | **none, parameter required** | Floating point numbers in degrees, expressing a valid bounding box `bbox`, not larger than the configured size limit (25 square degrees), not overlapping the dateline |
-    | `limit` | number of entries returned | 100 | Between 1 and 10000 |
-    | `closed` | number of days a note needs to be closed to no longer be returned | 7 | Value 0 means only open notes are returned / -1 means all notes are returned |
+    | `bbox` | Coordinates bounding the area | **none, parameter required** | Floating point numbers in degrees, expressing a valid [bounding box](../general_information/bounding_box.md) `bbox`, not larger than the configured size limit (25 square degrees), not overlapping the dateline |
+    | `limit` | Number of entries returned | 100 | Between 1 and 10000 |
+    | `closed` | Number of days a note needs to be closed to no longer be returned | 7 | Value 0 means only open notes are returned / -1 means all notes are returned |
 
 ### Request
 
@@ -29,7 +29,7 @@ Returns the existing notes in the specified [bounding box](get_api_map.md). The 
 
 | `bbox` | `limit` | `closed` |
 | :---: | :---:| :---:|
-| 14.182,49.969,19.011,51.839 | 3 | 5 |
+| 14.182, 49.969, 19.011, 51.839 | 3 | 5 |
 
 ``` title="Example note request"
 /api/0.6/notes?bbox=14.182,49.969,19.011,51.839&limit=3&closed=5

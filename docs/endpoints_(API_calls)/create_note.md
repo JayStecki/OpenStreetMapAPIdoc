@@ -1,12 +1,12 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
-Creates a new note for a specific geographic location (==longitude== and ==latitude== are required), which allows administrators/users to verify map data (comment in ==text==. Check the example).
+Creates a new note for a specific geographic location (latitude `lat` and longitude `lon` are required), which allows administrators/users to verify map data (comment in `text` – check the example).
 
-!!! note "If the request is made as an authenticated user, the note is associated with that user's account."
+!!! note "If the request is made as an authenticated user, the note is associated with that user's account"
     If the OAuth access token used does not have the `allow_write_notes` permission, it is created as an anonymous note instead.
 
 ### Request
@@ -17,7 +17,11 @@ Creates a new note for a specific geographic location (==longitude== and ==latit
 /api/0.6/notes
 ```
 
-``` title="newNoteForPointBody_example"
+| Latitude `lat` | Longitude `lon` | Message `text` |
+| :---: | :---: | :---: |
+| 50.8038794 | 16.2646154 | NazwaTerenuTo:OgródkidziałkoweMagnolia |
+
+``` title="newNoteForGeographicPointBody_example"
 /api/0.6/notes?lat=50.8038794&lon=16.2646154&text=NazwaTerenuTo:OgródkidziałkoweMagnolia
 ```
 
@@ -55,4 +59,4 @@ Creates a new note for a specific geographic location (==longitude== and ==latit
 === "400 (**Bad Request**)"
     If the text field was not present.
 === "404 (**Not Found**)"
-    This applies, if the request is not a (HTTP) **POST** request.
+    Requested resource could not be found (example: *Object not found*).

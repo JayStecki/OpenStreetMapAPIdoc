@@ -1,10 +1,10 @@
 <div class="grid cards" markdown>
 
-- :material-target: **One of the main OpenStreetMap API usability**.
+- :material-target: **One of the main OpenStreetMap API usabilities**
 
 </div>
 
-Returns the XML representation of the [relation element](../general_information/elements.md#elements-description). Relation ==ID== is required.
+Returns the XML representation of the [relation element](../general_information/elements.md#elements-description). Relation ID `id` is required.
 
 ### Request
 
@@ -12,6 +12,10 @@ Returns the XML representation of the [relation element](../general_information/
 
 ```
 /api/0.6/relation/{id}
+```
+
+``` title="Example relation request"
+/api/0.6/relation/4305233945
 ```
 
 ### Response
