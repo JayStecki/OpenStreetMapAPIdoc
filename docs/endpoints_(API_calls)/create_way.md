@@ -7,9 +7,9 @@
 Creates a new [way element](../general_information/elements.md#elements-description). In response you will receive way ID.
 
 !!! warning "To create new way you must operate inside an [open changeset](open_changeset.md)"
-    Insert the ongoing changeset ID `changeset` to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+    Insert the ongoing changeset ID `changeset` to the request body. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the node's IDs `nd ref` and tags `tag` are also required (check the example).
+In request body the node's IDs `nd ref` and tags `tag` are also required (check the example).
 
 ### Request
 
@@ -19,7 +19,7 @@ In `request body` the node's IDs `nd ref` and tags `tag` are also required (chec
 /api/0.6/ways
 ```
 
-``` xml title="createWayBody_example.xml" hl_lines="2-5"
+``` xml title="Example body request for creating way" hl_lines="2-5"
 <osm>
   <way changeset="412389">
     <nd ref="4359470504"/>

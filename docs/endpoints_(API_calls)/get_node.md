@@ -14,7 +14,7 @@ Returns the XML representation of the [node element](../general_information/elem
 /api/0.6/node/{id}
 ```
 
-``` title="Example node request"
+``` title="Example body request for node with ID"
 /api/0.6/node/4359470504
 ```
 

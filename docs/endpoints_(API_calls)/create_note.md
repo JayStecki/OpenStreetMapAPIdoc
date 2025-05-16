@@ -4,7 +4,7 @@
 
 </div>
 
-Creates a new note for a specific geographic location (latitude `lat` and longitude `lon` are required), which allows administrators/users to verify map data (comment in `text` – check the example).
+Creates a new note for a specific geographic location, which allows administrators/users to verify map data (latitude `lat`, longitude `lon` and comment in `text` are required – check the example).
 
 !!! note "If the request is made as an authenticated user, the note is associated with that user's account"
     If the OAuth access token used does not have the `allow_write_notes` permission, it is created as an anonymous note instead.
@@ -21,7 +21,7 @@ Creates a new note for a specific geographic location (latitude `lat` and longit
 | :---: | :---: | :---: |
 | 50.8038794 | 16.2646154 | NazwaTerenuTo:OgródkidziałkoweMagnolia |
 
-``` title="newNoteForGeographicPointBody_example"
+``` title="Example body request for new note for geographic point"
 /api/0.6/notes?lat=50.8038794&lon=16.2646154&text=NazwaTerenuTo:OgródkidziałkoweMagnolia
 ```
 
@@ -29,7 +29,7 @@ Creates a new note for a specific geographic location (latitude `lat` and longit
 
 ![](https://img.shields.io/badge/Response-200%20OK-brightgreen)
 
-``` xml title="newNoteForPointAdded_example.xml" linenums="1" hl_lines="3-17"
+``` xml title="newNoteForMapPoint_example.xml" linenums="1" hl_lines="3-17"
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
     <note lon="16.2646154" lat="50.8038794">
@@ -57,6 +57,6 @@ Creates a new note for a specific geographic location (latitude `lat` and longit
 ### Error codes
 
 === "400 (**Bad Request**)"
-    If the text field was not present.
+    If the **text field** was not present.
 === "404 (**Not Found**)"
     Requested resource could not be found (example: *Object not found*).

@@ -17,7 +17,7 @@ Opens a new [changeset](../general_information/changesets.md). In response you w
 /api/0.6/changeset/create
 ```
 
-``` xml title="changesetBody_example.xml"
+``` xml title="Request with example body"
 <osm>
   <changeset>
     <tag k="created_by" v="JayStecki Test (via Postman)"/>

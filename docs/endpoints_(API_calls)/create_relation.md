@@ -7,9 +7,9 @@
 Creates a new [relation element](../general_information/elements.md#elements-description). In response you will receive relation ID.
 
 !!! warning "To create new relation you must operate inside an [open changeset](open_changeset.md)"
-    Insert the ongoing changeset ID `changeset` to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+    Insert the ongoing changeset ID `changeset` to the request body. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the way's IDs `ref`, member role `role` and tag `k="type" v=" "` are also required (check the example).
+In request body the way's IDs `ref`, member role `role` and tag `k="type" v=" "` are also required (check the example).
 
 ### Request
 
@@ -24,7 +24,7 @@ In `request body` the way's IDs `ref`, member role `role` and tag `k="type" v=" 
 | `<member ... role=" ">` | `"outer"` / `"inner"` / `"forward"` / `"backward"` |
 | `<tag k="type" v=" ">` | `"relation"` / `"multipolygon"` |
 
-``` xml title="createRelationBody_example.xml" hl_lines="2-6"
+``` xml title="Example body request for creating relation" hl_lines="2-6"
 <osm>
   <relation changeset="412389">
     <member type="way" ref="4307240014" role="outer"/>

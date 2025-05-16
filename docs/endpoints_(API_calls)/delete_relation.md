@@ -7,9 +7,9 @@
 Deletes an existing [relation element](../general_information/elements.md#elements-description).
 
 !!! warning "To delete existing relation you must operate inside an [open changeset](open_changeset.md)."
-    Insert the ongoing changeset ID `changeset` to the `request body`. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
+    Insert the ongoing changeset ID `changeset` to the request body. After completing various operations on the element, you should [close a changset](close_changeset.md) (or it will [close automatically](../general_information/changesets.md#changesets-attributes)). You can also do multiple operations on many elements (create, update, delete) in one ongoing changeset.
 
-In `request body` the relation ID `id` and relation version `version` are also required (check the example).
+In request body the relation ID `id` and relation version `version` are also required (check the example).
 
 ### Request
 
@@ -19,7 +19,7 @@ In `request body` the relation ID `id` and relation version `version` are also r
 /api/0.6/relation/{id}
 ```
 
-``` xml title="deleteRelationBody_example.xml" linenums="1" hl_lines="2"
+``` xml title="Example body request for delete relation with ID" linenums="1" hl_lines="2"
 <osm>
   <relation id="4305233945" version="2" changeset="412421"/>
 </osm>

@@ -22,7 +22,7 @@ The following command returns:
 | :---: | :---:| :---:| :---: |
 | 100 | 50 | 100 | 50 |
 
-``` title="Example bounding box request"
+``` title="Request with example bounding box"
 /api/0.6/map?bbox=100,50,100,50
 ```
 

@@ -31,7 +31,7 @@ Returns the existing notes in the specified [bounding box](../general_informatio
 | :---: | :---:| :---:|
 | 14.182, 49.969, 19.011, 51.839 | 3 | 5 |
 
-``` title="Example note request"
+``` title="Example body request for notes with bbox"
 /api/0.6/notes?bbox=14.182,49.969,19.011,51.839&limit=3&closed=5
 ```
 

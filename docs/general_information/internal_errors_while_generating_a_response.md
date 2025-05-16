@@ -3,7 +3,7 @@ In the unlikely event of an internal error occurring while generating the respon
 !!! warning "Internal error explanation"
     Even though the HTTP return code is 200, and the response is syntactically correct, the message will be incomplete, and must be discarded by editing applications. For further analysis, editing applications should report an internal API error back to the user, along with the error message returned by the API call.
 
-``` xml title="wayWithTagError_example.xml" linenums="1" hl_lines="18"
+``` xml title="wayWithError_example.xml" linenums="1" hl_lines="18"
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="CGImap 0.8.7 (26234 ubuntu)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <way id="4000392204" visible="true" version="1" changeset="1874689" timestamp="2022-07-26T20:56:27Z" user="mmd2" uid="1">

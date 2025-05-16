@@ -14,7 +14,7 @@ Returns the XML representation of the [way element](../general_information/eleme
 /api/0.6/way/{id}
 ```
 
-``` title="Example way request"
+``` title="Example body request for way with ID"
 /api/0.6/way/4307240014
 ```
 

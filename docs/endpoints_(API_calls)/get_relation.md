@@ -14,7 +14,7 @@ Returns the XML representation of the [relation element](../general_information/
 /api/0.6/relation/{id}
 ```
 
-``` title="Example relation request"
+``` title="Example body request for relation with ID"
 /api/0.6/relation/4305233945
 ```
 

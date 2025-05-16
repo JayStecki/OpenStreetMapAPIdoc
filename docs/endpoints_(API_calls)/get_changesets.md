@@ -33,7 +33,7 @@ A method for getting a list of [changesets](../general_information/changesets.md
 | :---: | :---: | :---: | :---: | :---: |
 | 14.182, 49.969, 19.011, 51.839 | 22098 | closed | oldest | 10 |
 
-``` title="Example changesets request"
+``` title="Request with example body"
 /api/0.6/changesets?bbox=14.182,49.969,19.011,51.839&user=22098&closed=true&order=oldest&limit=10
 ```
 
@@ -41,7 +41,7 @@ A method for getting a list of [changesets](../general_information/changesets.md
 
 ![](https://img.shields.io/badge/Response-200%20OK-brightgreen)
 
-``` xml title="changesetSpecified_example.xml" linenums="1" hl_lines="3-13"
+``` xml linenums="1" hl_lines="3-13"
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
     <changeset id="412384" created_at="2025-04-23T10:57:06Z" open="false" comments_count="0" changes_count="1" closed_at="2025-04-23T11:51:26Z" min_lat="50.8038794" min_lon="16.2646154" max_lat="50.8038794" max_lon="16.2646154" uid="22098" user="JayStecki">
