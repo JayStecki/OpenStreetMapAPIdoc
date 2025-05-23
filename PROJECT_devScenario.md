@@ -18,7 +18,7 @@
 
 [^1]:
 
-[Elements by OSM doc](https://wiki.openstreetmap.org/wiki/Elements)
+[Elements by OSM docs](https://wiki.openstreetmap.org/wiki/Elements)
 
 > Elements are the basic components of OpenStreetMap's conceptual data model of the physical world. There are three types of elements:
 - nodes (defining points in space),
@@ -27,12 +27,12 @@
 
 [^2]:
 
-[Changesets by OSM doc](https://wiki.openstreetmap.org/wiki/API_v0.6#Changesets_2)
+[Changesets by OSM docs](https://wiki.openstreetmap.org/wiki/API_v0.6#Changesets_2)
 
-> Every [modification](#operations-on-elements) of one or more of the elements has to reference an open changeset.
+> Every modification of one or more of the elements has to reference an open changeset.
 
 [^3]:
 
 [Tags by OSM docs](https://wiki.openstreetmap.org/wiki/Tags)
 
-> Every element and [changeset](#changesets-attribute) may have any number of tags. A tag is a Key-Value pair of Unicode strings of up to 255 full Unicode characters (not bytes) each.
+> Every element and changeset may have any number of tags. A tag is a Key-Value pair of Unicode strings of up to 255 full Unicode characters (not bytes) each.
