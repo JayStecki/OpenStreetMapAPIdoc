@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jaystecki.github.io/OpenStreetMapAPIdoc/sitemap.xml
