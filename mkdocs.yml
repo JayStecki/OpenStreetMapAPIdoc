@@ -1,4 +1,5 @@
 site_name: OpenStreetMap API docs
+site_url: https://jaystecki.github.io/OpenStreetMapAPIdoc/
 theme: 
   name: material
   language: en
